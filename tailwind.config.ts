@@ -7,7 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
 
-  darkMode: 'class',
+  darkMode: "class",
 
   theme: {
     extend: {
@@ -15,13 +15,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         textDark: "var(--text-color)",
-        goldLight: '#eedd91',
-        goldDark: '#ac8661',
+        goldLight: "#eedd91",
+        goldDark: "#ac8661",
       },
 
       dropShadow: {
-        'gold': '0 0 4px #ff8000',
-        'goldXS': '0 0 4px #ff800070',
+        gold: "0 0 4px #ff8000",
+        goldXS: "0 0 4px #ff800070",
+        blackSvg: "0 0 0 #000000",
       },
     },
   },

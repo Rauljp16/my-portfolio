@@ -3,7 +3,6 @@ import Image from "next/image";
 import ButtonTheme from "./ButtonTheme";
 
 function Header() {
-
   return (
     <div className=" flex items-center justify-between">
       <Image
@@ -11,7 +10,7 @@ function Header() {
         alt="Logo"
         width={2134}
         height={1866}
-        className="w-32 h-auto"
+        className="w-40 h-auto drop-shadow-blackSvg"
       />
       <ButtonTheme />
     </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -12,8 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html suppressHydrationWarning lang="en">
+      <body className="bg-foreground dark:bg-background transition ease-in-out duration-700">
+        <ThemeProvider defaultTheme="system" attribute="class">
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

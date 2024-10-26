@@ -10,7 +10,7 @@ function Header() {
         alt="Logo"
         width={2134}
         height={1866}
-        className="w-40 h-auto drop-shadow-blackSvg"
+        className="w-40 h-auto drop-shadow-blackSvg "
       />
       <ButtonTheme />
     </div>

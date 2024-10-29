@@ -3,22 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #27272a;
-  --foreground: #dfdfdf;
-  --text-color: #cc0000;
+  --svg-stroke: #1d1d1d;
+  --svg-fill: #1d1d1d;
 }
 
 [data-theme="dark"] {
-  --background: #dfdfdf;
-  --foreground: #27272a;
-  --text-color: #00cc22;
+  --svg-stroke: #971111;
+  --svg-fill: #121863;
 }
-/* [data-theme="test"] {
-  --background: #cc00ffcb;
-  --foreground: #ba69e0;
-  --text-color: #b8cc00;
-} */
-
 body {
   max-width: 1400px;
   margin: 0 auto;

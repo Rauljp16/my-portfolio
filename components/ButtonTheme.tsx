@@ -3,7 +3,7 @@ import React from "react";
 import { useTheme } from "next-themes";
 
 function ButtonTheme() {
-    const { resolvedTheme, theme, setTheme } = useTheme();
+    const { resolvedTheme, setTheme } = useTheme();
 
     const toggleTheme = () => {
         setTheme(resolvedTheme === "light" ? "dark" : "light");
@@ -11,10 +11,11 @@ function ButtonTheme() {
 
     return (
         <div>
-            <div className="p-4">
+            <div className="p-4 flex gap-2 items-center tracking-wide text-goldDark">
+                <p className="text-xs">dark</p>
                 <label className="relative inline-flex items-center cursor-pointer">
                     <input
-                        checked={resolvedTheme === "dark"}
+                        checked={resolvedTheme === "light"}
                         onChange={toggleTheme}
                         type="checkbox"
                         value=""
@@ -31,6 +32,7 @@ function ButtonTheme() {
                         peer-checked:bg-transparent hover:peer-checked:bg-transparent border border-goldDark"
                     ></div>
                 </label>
+                <p className="text-xs">light</p>
             </div>
         </div>
     );

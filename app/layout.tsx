@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
@@ -14,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className="bg-foreground dark:bg-background transition ease-in-out duration-700">
-        <ThemeProvider defaultTheme="system" attribute="class">
+      <body className="bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark transition-colors duration-700 ease-in-out min-h-dvh">
+        <ThemeProvider defaultTheme="dark" attribute="class">
           {children}
         </ThemeProvider>
       </body>

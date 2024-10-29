@@ -12,13 +12,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        textDark: "var(--text-color)",
+        background: {
+          light: "#f0f0f0",
+          dark: "#1e1e1e",
+        },
+        foreground: {
+          light: "#1e1e1e",
+          dark: "#f0f0f0",
+        },
+        textColor: {
+          light: "",
+          dark: "",
+        },
         goldLight: "#eedd91",
         goldDark: "#ac8661",
       },
-
       dropShadow: {
         gold: "0 0 4px #ff8000",
         goldXS: "0 0 4px #ff800070",
@@ -28,4 +36,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

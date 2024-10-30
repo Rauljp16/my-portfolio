@@ -32,6 +32,10 @@ const config: Config = {
         goldXS: "0 0 4px #ff800070",
         blackSvg: "0 0 0 #000000",
       },
+      fontFamily: {
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+        inter: ['var(--font-inter)', 'sans-serif'],
+      },
     },
   },
   plugins: [],

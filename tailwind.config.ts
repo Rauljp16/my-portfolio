@@ -24,17 +24,21 @@ const config: Config = {
           light: "",
           dark: "",
         },
-        goldLight: "#eedd91",
+        goldLight: "#baac6f",
         goldDark: "#ac8661",
       },
       dropShadow: {
         gold: "0 0 4px #ff8000",
         goldXS: "0 0 4px #ff800070",
         blackSvg: "0 0 0 #000000",
+        black: "0 0 5px #1e1e1e",
+        white: "0 0 2px #f0f0f0",
+        teal: "0 0 5px #5eead4"
       },
       fontFamily: {
-        poppins: ['var(--font-poppins)', 'sans-serif'],
+        waterfall: ['var(--font-waterfall)', 'sans-serif'],
         inter: ['var(--font-inter)', 'sans-serif'],
+        train: ['var(--font-train)', 'sans-serif'],
       },
     },
   },

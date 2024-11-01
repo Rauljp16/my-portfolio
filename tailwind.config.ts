@@ -40,6 +40,15 @@ const config: Config = {
         inter: ['var(--font-inter)', 'sans-serif'],
         train: ['var(--font-train)', 'sans-serif'],
       },
+      animation: {
+        marquee: "marquee 90s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],

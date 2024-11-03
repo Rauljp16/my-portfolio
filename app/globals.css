@@ -11,6 +11,17 @@
   --svg-stroke: #971111;
   --svg-fill: #121863;
 }
+.bg-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    #0d9488,
+    transparent
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1300px;
   margin: 0 auto;

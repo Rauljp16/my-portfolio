@@ -33,7 +33,7 @@ const config: Config = {
         blackSvg: "0 0 0 #000000",
         black: "0 0 5px #1e1e1e",
         white: "0 0 2px #f0f0f0",
-        teal: "0 0 5px #5eead4"
+        teal: "0 0 16px #5eead4"
       },
       fontFamily: {
         waterfall: ['var(--font-waterfall)', 'sans-serif'],
@@ -41,12 +41,12 @@ const config: Config = {
         train: ['var(--font-train)', 'sans-serif'],
       },
       animation: {
-        marquee: "marquee 10s linear infinite",
+        marquee: "marquee 20s linear infinite",
       },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
     },

@@ -22,27 +22,27 @@ function Banner() {
     ];
 
     return (
-        <div className="flex h-20 overflow-hidden bg-teal-500/50 mb-10">
+        <div className="flex h-32 overflow-hidden bg-gradient mb-10 ">
             {/* Contenedor principal de íconos con animación animate-marquee */}
-            <div className="flex justify-between animate-marquee bg-slate-800">
+            <div className="flex justify-between animate-marquee ">
                 {/* Recorre los íconos y los muestra en el banner */}
                 {icons.map((icon, index) => (
-                    <div key={index} className="relative w-20 flex items-center justify-center ">
+                    <div key={index} className=" w-36 flex items-center justify-center ">
                         <Image
                             src={icon}
                             alt={`Icon ${index + 1}`}
-                            width={60}
-                            height={60}
+                            width={66}
+                            height={66}
                         />
                     </div>
                 ))}
                 {icons.map((icon, index) => (
-                    <div key={index} className="relative w-20 flex items-center justify-center ">
+                    <div key={index} className=" w-36 flex items-center justify-center ">
                         <Image
                             src={icon}
                             alt={`Icon ${index + 1}`}
-                            width={60}
-                            height={60}
+                            width={66}
+                            height={66}
                         />
                     </div>
                 ))}

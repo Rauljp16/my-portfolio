@@ -33,7 +33,8 @@ const config: Config = {
         blackSvg: "0 0 0 #000000",
         black: "0 0 5px #1e1e1e",
         white: "0 0 2px #f0f0f0",
-        teal: "0 0 16px #5eead4"
+        teal: "0 0 16px #5eead4",
+        tealImg: "-6px 6px 8px #5eead4"
       },
       fontFamily: {
         waterfall: ['var(--font-waterfall)', 'sans-serif'],

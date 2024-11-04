@@ -1,5 +1,7 @@
+import About from "@/components/About";
 import Carrusel from "@/components/Carrusel";
 import Header from "@/components/Header";
+import Projects from "@/components/Projects";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -74,51 +76,11 @@ export default function Home() {
             </article>
           </div>
         </section>
-        <section className="">
+        <section>
           <Carrusel />
         </section>
-        <section id="about" className="flex items-start justify-between p-8 mt-20">
-          <article className="">
-            <Image
-              src="/images/about.webp"
-              alt="Logo"
-              width={500}
-              height={500}
-              className="rounded-lg"
-            />
-          </article>
-          <div>
-            <h1 className="text-[63px] font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-2 mb-6">
-              About me!!!
-            </h1>
-            <p className="text-md tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear  max-w-[600px] mb-4">
-              Soy Raúl Jerez Pagán, <br />
-              Full Stack Developer apasionado por crear aplicaciones bien
-              estructuradas y centradas en el usuario. Disfruto cada etapa del
-              desarrollo web, aprendiendo y adaptándome constantemente a
-              nuevas tecnologías y desafíos. En mi portafolio puedes conocerme
-              mejor y ver mis proyectos.
-            </p>
-            <h3 className="mt-10 font-inter font-bold tracking-wider text-2xl text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">Skills</h3>
-            <ul className="columns-2 font-inter font-bold text-base tracking-wider text-teal-600 mt-4">
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Angular</li>
-              <li>Node</li>
-              <li>Html</li>
-              <li>Css</li>
-              <li>Tailwind</li>
-              <li>Mongo</li>
-              <li>Php</li>
-              <li>Laravel</li>
-              <li>MySql</li>
-              <li>Sass</li>
-              <li>Bem</li>
-            </ul>
-          </div>
-
-        </section>
+        <About />
+        <Projects />
       </main>
     </>
   );

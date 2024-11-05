@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <section className="flex h-full min-h-svh flex-col pt-32 bg-[url('/svg/bg.svg')]">
           <div className=" flex h-full items-center justify-around px-8 ">
-            <article className="w-2/3 h-full flex flex-col justify-between pt-8">
+            <article className="w-2/3 h-full flex flex-col gap-4 justify-between pt-12">
               <div className="pt-12">
                 <h3 className=" font-bold mb-2 text-5xl font-waterfall text-teal-600 tracking-wide drop-shadow-teal dark:drop-shadow-teal rounded-xl px-1 -left-1  max-w-fit transition duration-700 ease-in-out">
                   Raúl Jerez Pagán
@@ -31,12 +31,8 @@ export default function Home() {
                 </h1>
               </div>
               <p className="text-md tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear  max-w-[500px] mb-4">
-                Soy Raúl Jerez Pagán, <br />
-                Full Stack Developer apasionado por crear aplicaciones bien
-                estructuradas y centradas en el usuario. Disfruto cada etapa del
-                desarrollo web, aprendiendo y adaptándome constantemente a
-                nuevas tecnologías y desafíos. En mi portafolio puedes conocerme
-                mejor y ver mis proyectos.
+                Desarrollador de aplicaciones web que combinan estructura y usabilidad. <br />
+                Cada proyecto es una oportunidad para crear experiencias digitales que marcan la diferencia.
               </p>
               <p className="text-lg text-transparent font-inter bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
                 ¡Espero que lo disfrutes tanto como yo al crearlo!

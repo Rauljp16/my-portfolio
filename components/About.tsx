@@ -6,28 +6,28 @@ function About() {
         <div>
             <section
                 id="about"
-                className="relative flex flex-col lg:flex-row min-h-full items-center lg:items-end justify-center lg:justify-evenly gap-8 lg:gap-12 p-4 lg:p-8 mt-10 lg:mt-20"
+                className="relative flex flex-col lg:flex-row min-h-screen max-h-[1000px] items-center lg:items-end justify-center lg:justify-start gap-8 lg:gap-12 p-4 lg:px-8 lg:py-32 mt-10 lg:mt-20"
             >
-                <article className="relative max-w-[516px] w-3/4 sm:w-2/3 md:w-1/2 lg:w-4/5 aspect-square overflow-hidden rounded-full mb-6 lg:mb-auto drop-shadow-tealImg">
+                <article className="relative max-w-[550px] w-3/4 sm:w-2/3 md:w-1/2 lg:w-full aspect-square overflow-hidden rounded-full mb-6 lg:mb-auto lg:mt-28 drop-shadow-tealImg">
                     <Image
                         src="/images/about.webp"
                         alt="Logo"
-                        width={516}
-                        height={516}
+                        width={550}
+                        height={550}
                         className="object-none object-right-bottom w-full h-full"
                     />
                 </article>
-                <div className="pb-6 max-w-[500px] lg:w-3/5 text-center lg:text-left">
-                    <h1 className="relative lg:-left-72 lg:mt-12 lg:mb-4 lg:w-[600px] text-4xl tracking-wide sm:text-6xl md:text-7xl lg:text-[88px] font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-2 drop-shadow-blackSvg">
+                <div className="pb-8 max-w-[500px] lg:w-3/5 text-center lg:text-left">
+                    <h1 className="relative lg:-left-72 lg:mb-12 lg:w-[600px] text-4xl tracking-wide sm:text-6xl md:text-7xl lg:text-[88px] font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-2 drop-shadow-blackSvg">
                         Sobre mí
                     </h1>
-                    <p className="text-sm sm:text-md md:text-lg tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear max-w-full mb-4">
+                    <p className="text-sm sm:text-md md:text-lg tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear max-w-full mb-10">
                         Soy Raúl Jerez Pagán, <br />
                         Full Stack Developer apasionado por crear aplicaciones bien estructuradas
                         y centradas en el usuario. Disfruto cada etapa del desarrollo web,
                         aprendiendo y adaptándome constantemente a nuevas tecnologías y desafíos.
                     </p>
-                    <h3 className="mt-10 font-inter font-bold tracking-wider text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
+                    <h3 className="font-inter font-bold tracking-wider text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
                         Skills
                     </h3>
                     <ul className="columns-3 font-inter font-bold text-sm sm:text-base tracking-wider text-teal-600 mt-4 space-y-1 ">

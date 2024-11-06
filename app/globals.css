@@ -17,8 +17,8 @@ body {
 }
 
 [data-theme="dark"] {
-  --svg-stroke: #971111;
-  --svg-fill: #121863;
+  --svg-stroke: #1d1d1d;
+  --svg-fill: #1d1d1d;
 }
 
 .bg-gradient {
@@ -29,12 +29,11 @@ body {
     transparent
   );
 }
-
 .slider {
   position: absolute;
-  top: 40px;
+  top: 130px;
   right: 16px;
-  bottom: 40px;
+  bottom: 90px;
   left: 16px;
   border-radius: 20px;
 }
@@ -44,8 +43,8 @@ body {
   top: 65%;
   left: 65%;
   transform: translateY(50%);
-  width: 15%;
-  height: 224px;
+  width: 13%;
+  height: 210px;
   background-size: cover;
   background-position: center;
   transition: 0.7s;
@@ -64,11 +63,11 @@ body {
 }
 .child1 {
   transform: translateY(80%);
-  transform: translatex(40%);
+  transform: translatex(0%);
 }
 .child2 {
   transform: translateY(70%);
-  transform: translatex(160%);
+  transform: translatex(120%);
 }
 .child3 {
   transform: translateY(70%);

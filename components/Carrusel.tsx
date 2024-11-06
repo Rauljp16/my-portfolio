@@ -22,7 +22,7 @@ function Banner() {
     ];
 
     return (
-        <div className="flex h-44 overflow-hidden bg-gradient mb-10 ">
+        <div className="relative -top-16 flex h-44 overflow-hidden bg-gradient mb-10 ">
             {/* Contenedor principal de íconos con animación animate-marquee */}
             <div className="flex justify-between animate-marquee ">
                 {/* Recorre los íconos y los muestra en el banner */}

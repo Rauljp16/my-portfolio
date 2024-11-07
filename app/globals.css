@@ -73,3 +73,10 @@ body {
   transform: translateY(70%);
   transform: translatex(240%);
 }
+.focusActive {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.focusDesactive {
+  opacity: 0;
+}

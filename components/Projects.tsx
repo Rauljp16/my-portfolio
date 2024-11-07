@@ -108,7 +108,7 @@ function Projects() {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-[20px]"></div>
                     <div id="focus" className="focusActive absolute max-w-[500px] top-[5%] left-[5%]">
                         <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
-                            HOTEL MIRANDA
+                            HOTEL
                         </h1>
                         <p className="w-[80%] text-background-light tracking-wider mb-6 ">
                             Hotel Miranda, una aplicación web para gestionar un hotel

@@ -51,9 +51,9 @@ function About() {
                     <Image
                         src="/images/rectangle.png"
                         alt="Logo"
-                        width={716}
-                        height={716}
-                        className="relative -top-80 -right-72 blur-[100px] "
+                        width={656}
+                        height={656}
+                        className="relative -top-48 -right-64 blur-[50px] "
                     />
                 </div>
             </section>

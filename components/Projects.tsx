@@ -69,27 +69,27 @@ function Projects() {
                             como para los administradores.
                         </p>
                         <ul className="flex gap-4 items-center mb-10">
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/html.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/js.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/sass.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl " />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/php.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/laravel.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/mysql.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
@@ -104,11 +104,11 @@ function Projects() {
                         </div>
                     </div>
                 </article>
-                <article className="childFocus slides  bg-[url('/images/about.webp')] ">
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-[20px]"></div>
-                    <div id="focus" className="focusActive absolute max-w-[500px] top-[5%] left-[5%]">
+                <article className="childFocus slides  bg-[url('/images/projects/hotelMiranda.webp')] ">
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
+                    <div id="focus" className="focusActive absolute max-w-[500px] top-[5%] left-[5%] ">
                         <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
-                            HOTEL
+                            HOTEL MIRANDA
                         </h1>
                         <p className="w-[80%] text-background-light tracking-wider mb-6 ">
                             Hotel Miranda, una aplicación web para gestionar un hotel
@@ -116,27 +116,27 @@ function Projects() {
                             como para los administradores.
                         </p>
                         <ul className="flex gap-4 items-center mb-10">
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/html.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/js.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/sass.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl " />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/php.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/laravel.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/mysql.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
@@ -163,27 +163,27 @@ function Projects() {
                             como para los administradores.
                         </p>
                         <ul className="flex gap-4 items-center mb-10">
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/html.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/js.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/sass.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl " />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/php.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/laravel.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/mysql.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
@@ -210,27 +210,27 @@ function Projects() {
                             como para los administradores.
                         </p>
                         <ul className="flex gap-4 items-center mb-10">
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/html.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/js.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/sass.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl " />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/php.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/laravel.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/mysql.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
@@ -257,27 +257,27 @@ function Projects() {
                             como para los administradores.
                         </p>
                         <ul className="flex gap-4 items-center mb-10">
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/html.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/js.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/sass.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl " />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/php.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/laravel.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
-                            <li className="bg-background-light/30 dark:bg-background-dark/30 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/mysql.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
@@ -295,16 +295,16 @@ function Projects() {
             </div>
             <article className="absolute bottom-40 left-44 flex gap-10 z-20">
                 <button
-                    className="w-14 h-10 flex p-2 bg-background-light/70 dark:bg-background-dark/70 justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
+                    className="w-14 h-10 flex bg-background-light/60 dark:bg-background-dark/60 justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
                     onClick={handlePrev}
                 >
-                    <img src="/svg/arrowleft.svg" className="h-8 w-8" />
+                    <img src="/svg/arrowleft.svg" className="h-9 w-9" />
                 </button>
                 <button
-                    className="w-14 h-10 flex p-2 bg-background-light/70 dark:bg-background-dark/70 justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
+                    className="w-14 h-10 flex bg-background-light/60 dark:bg-background-dark/60 justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
                     onClick={handleNext}
                 >
-                    <img src="/svg/arrowRight.svg" className="h-8 w-8" />
+                    <img src="/svg/arrowRight.svg" className="h-9 w-9" />
                 </button>
             </article>
         </section>

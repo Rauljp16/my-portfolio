@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="#ac8661" d="m145 96l66 746.6L511.8 928l299.6-85.4L878.7 96zm610.9 700.6l-244.1 69.6l-245.2-69.6l-56.7-641.2h603.8zM281 249l1.7 24.3l22.7 253.5h206.5v-.1h112.9l-11.4 118.5L511 672.9v.2h-.8l-102.4-27.7l-6.5-73.2h-91l11.3 144.7l188.6 52h1.7v-.4l187.7-51.7l1.7-16.3l21.2-242.2l3.2-24.3H511v.2H389.9l-8.2-94.2h352.1l1.7-19.5l4.8-47.2L742 249H511z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+	<defs>
+		<mask id="ipTHtmlFive0">
+			<g fill="none" stroke="#fff" stroke-width="2">
+				<path fill="#000" d="M37.804 5H10.196a2 2 0 0 0-1.991 2.187l2.688 28.666a2 2 0 0 0 1.153 1.63l11.116 5.13a2 2 0 0 0 1.676 0l11.116-5.13a2 2 0 0 0 1.154-1.63l2.687-28.666A2 2 0 0 0 37.804 5Z" />
+				<path stroke-linecap="round" stroke-linejoin="round" d="M32 12H16l1 9h14l-1 11l-6 3l-6-3l-.5-5" />
+			</g>
+		</mask>
+	</defs>
+	<path fill="#ac8661" d="M0 0h48v48H0z" mask="url(#ipTHtmlFive0)" />
+</svg>

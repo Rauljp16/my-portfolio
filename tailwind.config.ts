@@ -42,12 +42,12 @@ const config: Config = {
         train: ['var(--font-train)', 'sans-serif'],
       },
       animation: {
-        marquee: "marquee 20s linear infinite",
+        marquee: "marquee 18s linear infinite",
       },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
     },

@@ -104,7 +104,7 @@ function Projects() {
                         </div>
                     </div>
                 </article>
-                <article className="childFocus slides  bg-[url('/images/projects/hotelMiranda.webp')] ">
+                <article className="childFocus slides  bg-[url('/images/projects/h.miranda.jpg')] ">
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
                     <div id="focus" className="focusActive absolute max-w-[500px] top-[5%] left-[5%] ">
                         <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
@@ -116,7 +116,7 @@ function Projects() {
                             como para los administradores.
                         </p>
                         <ul className="flex gap-4 items-center mb-10">
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-light/10 dark:bg-background-dark/80 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/html.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />
                             </li>
@@ -245,7 +245,7 @@ function Projects() {
                         </div>
                     </div>
                 </article>
-                <article className="child3 slides bg-[url('/images/logo.png')]  ">
+                <article className="child3 slides bg-[url('/images/logo.png')] bg-zinc-800  ">
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-[20px]"></div>
                     <div id="focus" className="focusDesactive absolute max-w-[500px] top-[5%] left-[5%]">
                         <h1 className="font-train font-bold text-6xl pb-8 text-background-light">

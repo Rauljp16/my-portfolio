@@ -34,12 +34,13 @@ const config: Config = {
         black: "0 0 5px #1e1e1e",
         white: "0 0 2px #f0f0f0",
         teal: "0 0 16px #5eead4",
-        tealImg: "-6px 6px 8px #5eead4"
+        tealXs: "0 0 4px #5eead4",
+        tealImg: "-6px 6px 8px #5eead4",
       },
       fontFamily: {
-        waterfall: ['var(--font-waterfall)', 'sans-serif'],
-        inter: ['var(--font-inter)', 'sans-serif'],
-        train: ['var(--font-train)', 'sans-serif'],
+        waterfall: ["var(--font-waterfall)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+        train: ["var(--font-train)", "sans-serif"],
       },
       animation: {
         marquee: "marquee 18s linear infinite",

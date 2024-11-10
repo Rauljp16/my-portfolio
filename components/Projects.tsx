@@ -115,7 +115,7 @@ function Projects() {
                             ficticio, con funcionalidades completas tanto para los usuarios
                             como para los administradores.
                         </p>
-                        <ul className="flex gap-4 items-center mb-10">
+                        <ul className="flex gap-4 items-center mb-9">
                             <li className="bg-background-light/10 dark:bg-background-dark/80 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
 
                                 <img src="svg/carrusel/html.svg" alt="icono projects" className="w-12 h-12 drop-shadow-xl" />

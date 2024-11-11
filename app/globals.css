@@ -46,7 +46,7 @@ body {
   width: 13%;
   height: 210px;
   background-size: cover;
-  background-position: center;
+  background-position: center 25%;
   transition: 0.7s;
   border-radius: 20px;
   box-shadow: 0 10px 25px #1e1e1e;

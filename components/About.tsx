@@ -21,7 +21,7 @@ function About() {
                     <h1 className="relative lg:-left-72 lg:mb-12 lg:w-[600px] text-4xl tracking-wide sm:text-6xl md:text-7xl lg:text-[88px] font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-2 drop-shadow-blackSvg">
                         Sobre mí
                     </h1>
-                    <p className="text-sm sm:text-md md:text-lg tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear max-w-full mb-10">
+                    <p className="text-sm sm:text-md md:text-lg tracking-wide leading-10 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear max-w-full mb-10">
                         Soy Raúl Jerez Pagán, <br />
                         Full Stack Developer apasionado por crear aplicaciones bien estructuradas
                         y centradas en el usuario. Disfruto cada etapa del desarrollo web,

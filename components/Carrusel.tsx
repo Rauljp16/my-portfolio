@@ -70,6 +70,12 @@ function Banner() {
                 <article className=" w-36 flex items-center justify-center ">
                     <Image src="svg/carrusel/sql.svg" alt="icon carrusel" width={60} height={65} />
                 </article>
+                <article className=" w-36 flex items-center justify-center ">
+                    <Image src="svg/carrusel/styled.svg" alt="icon carrusel" width={80} height={65} />
+                </article>
+                <article className=" w-36 flex items-center justify-center ">
+                    <Image src="svg/carrusel/aws.svg" alt="icon carrusel" width={80} height={65} />
+                </article>
             </section><section className="flex justify-between animate-marquee">
                 <article className=" w-36 flex items-center justify-center">
                     <Image src="svg/carrusel/angular.svg" alt="icon carrusel" width={71} height={65} />
@@ -115,6 +121,12 @@ function Banner() {
                 </article>
                 <article className=" w-36 flex items-center justify-center ">
                     <Image src="svg/carrusel/sql.svg" alt="icon carrusel" width={60} height={65} />
+                </article>
+                <article className=" w-36 flex items-center justify-center ">
+                    <Image src="svg/carrusel/styled.svg" alt="icon carrusel" width={80} height={65} />
+                </article>
+                <article className=" w-36 flex items-center justify-center ">
+                    <Image src="svg/carrusel/aws.svg" alt="icon carrusel" width={80} height={65} />
                 </article>
             </section>
         </div >

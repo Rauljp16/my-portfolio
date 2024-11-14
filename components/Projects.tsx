@@ -33,11 +33,13 @@ function Projects() {
 
     const handlePrev = () => {
         const slider = document.querySelector(".slider") as HTMLElement;
+        // const divFocus = document.getElementById("focus") as HTMLElement;
 
         const slide2 = slider.children[1] as HTMLElement;
         const slide3 = slider.children[2] as HTMLElement;
         const slide4 = slider.children[3] as HTMLElement;
         const slide5 = slider.children[4] as HTMLElement;
+        // const slideFocus = slide3.children[1] as HTMLElement;
 
         if (slider) {
             slide5.classList.replace("child3", "childFocus");
@@ -47,6 +49,18 @@ function Projects() {
 
             slider.insertBefore(slide5, slider.firstElementChild);
         }
+
+        // if (slide2.classList.contains("childFocus")) {
+        //     slideFocus.classList.replace("focusActive", "focusDesactive");
+        //     console.log("si funciona");
+        // }
+        // if (slide5.classList.contains("childFocus")) {
+        //     divFocus.classList.replace("focusActive", "focusDesactive");
+        //     console.log("no funciona");
+        // }
+
+
+
     };
 
     return (
@@ -57,89 +71,75 @@ function Projects() {
             <div className="absolute top-0 left-0 w-full h-[5%] bg-background-light/50 dark:bg-background-dark/50 transition duration-700 ease-in-out"></div>
             <div className="absolute top-0 left-0 w-full h-[10%] bg-background-light/50 dark:bg-background-dark/50 transition duration-700 ease-in-out"></div>
             <div className="slider overflow-hidden">
-                <article className="relative childFocus slides bg-[url('/images/fondo.webp')]">
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-[20px]"></div>
+                <article className="relative childFocus slides bg-[url('/images/projects/taqueria.png')]">
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
                     <div
                         id="focus"
-                        className="focusActive absolute max-w-[500px] top-[5%] left-[5%]"
+                        className="focusActive absolute max-w-[450px] top-[5%] left-[2%]"
                     >
-                        <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
-                            HOTEL MIRANDA
+                        <h1 className="font-train font-bold text-5xl pb-8 text-background-light">
+                            TAQUERIA TAQUEANDO.
                         </h1>
-                        <p className="w-[80%] text-background-light tracking-wider mb-6 ">
-                            Hotel Miranda, una aplicación web para gestionar un hotel
-                            ficticio, con funcionalidades completas tanto para los usuarios
-                            como para los administradores.
+                        <p className="w-[70%] text-background-light tracking-wider mb-6 ">
+                            Taqueria Taqueando, una aplicación web para gestionar un
+                            restaurante mexicano ficticio, con funcionalidades completas tanto
+                            para los clientes como para el equipo de administración.
                         </p>
-                        <ul className="flex gap-4 items-center mb-10 max-w-96 flex-wrap">
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                        <ul className="flex gap-4 items-center mb-9 max-w-64 flex-wrap ">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/html.svg"
+                                    src="svg/carrusel/react.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
                                     src="svg/carrusel/js.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/sass.svg"
+                                    src="svg/carrusel/tailwind.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl "
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/php.svg"
-                                    alt="icono projects"
-                                    className="w-12 h-12 drop-shadow-xl"
-                                />
-                            </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                                <img
-                                    src="svg/carrusel/laravel.svg"
-                                    alt="icono projects"
-                                    className="w-12 h-12 drop-shadow-xl"
-                                />
-                            </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                                <img
-                                    src="svg/carrusel/mysql.svg"
+                                    src="svg/carrusel/aws.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
                         </ul>
                         <div className="flex gap-8">
-                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-background-light bg-teal-800  justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
-                                WEBSITE
+                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+                                WEB
                             </button>
-                            <button className="w-28 h-10 rounded-lg flex p-2 bg-teal-800 font-inter tracking-widest text-background-light justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
-                                CODE
+                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+                                CÓDIGO
                             </button>
                         </div>
                     </div>
                 </article>
                 <article className="childFocus slides  bg-[url('/images/projects/mirandaEdit.png')] ">
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 rounded-[20px]"></div>
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
                     <div
                         id="focus"
-                        className="focusActive absolute max-w-[500px] top-[5%] left-[5%] "
+                        className="focusActive absolute max-w-[500px] top-[5%] left-[2%] "
                     >
                         <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
                             HOTEL MIRANDA
                         </h1>
-                        <p className="w-[80%] text-background-light tracking-wider mb-6 ">
+                        <p className="w-[80%] text-background-light tracking-wider mb-6 max-w-72">
                             Hotel Miranda, una aplicación web para gestionar un hotel
                             ficticio, con funcionalidades completas tanto para los usuarios
                             como para los administradores.
                         </p>
-                        <ul className="flex gap-4 items-center mb-9 max-w-96 flex-wrap">
+                        <ul className="flex gap-4 items-center mb-9 max-w-80 flex-wrap">
                             <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
                                     src="svg/carrusel/html.svg"
@@ -192,30 +192,30 @@ function Projects() {
                         </ul>
                         <div className="flex gap-8">
                             <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
-                                WEBSITE
+                                WEB
                             </button>
                             <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
-                                CODE
+                                CÓDIGO
                             </button>
                         </div>
                     </div>
                 </article>
                 <article className="child1 slides bg-[url('/images/projects/dashboardEdit.png')]">
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30  rounded-[20px]"></div>
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10  rounded-[20px]"></div>
                     <div
                         id="focus"
-                        className="focusDesactive absolute max-w-[500px] top-[5%] left-[5%]"
+                        className="focusDesactive absolute max-w-[500px] top-[5%] left-[2%]"
                     >
-                        <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
+                        <h1 className="font-train font-bold text-5xl pb-8 text-background-light">
                             DASHBOARD MIRANDA
                         </h1>
-                        <p className="w-[80%] text-background-light tracking-wider mb-6 ">
+                        <p className="w-[80%] text-background-light tracking-wider mb-6 max-w-[340px]">
                             Dashboard Miranda, una aplicación diseñad apara la gestión interna
                             del Hotel Miranda. Facilita el control de reservas, administración
                             de habitaciones, monitoreo de la ocupación, y gestión de
                             servicios, optimizando la operatividad diaria del hotel.
                         </p>
-                        <ul className="flex gap-4 items-center mb-9 max-w-96 flex-wrap">
+                        <ul className="flex gap-4 items-center mb-9 max-w-64 flex-wrap ">
                             <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
                                     src="svg/carrusel/react.svg"
@@ -254,154 +254,128 @@ function Projects() {
                         </ul>
                         <div className="flex gap-8">
                             <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
-                                WEBSITE
+                                WEB
                             </button>
                             <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
-                                CODE
+                                CÓDIGO
                             </button>
                         </div>
                     </div>
                 </article>
-                <article className="child2 slides bg-[url('/images/reception.webp')]  ">
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-[20px]"></div>
+                <article className="child2 slides bg-[url('/images/projects/oxygalleryEdit.png')]  ">
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
                     <div
                         id="focus"
-                        className="focusDesactive absolute max-w-[500px] top-[5%] left-[5%] "
+                        className="focusDesactive absolute max-w-[500px] top-[5%] left-[2%] "
                     >
-                        <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
+                        <h1 className="font-train font-bold text-5xl pb-8 text-background-light">
                             OXYGALLERY
                         </h1>
                         <p className="w-[80%] text-background-light tracking-wider mb-6 ">
-                            Oxygarelly, buscador de imágenes dinámico que permite
-                            explorar y buscar imágenes de alta calidad en tiempo real,
-                            aprovechando la API pública de Unsplash. Facilita a los usuarios
-                            el acceso rápido a imágenes categorizadas y personalizables,
-                            optimizando la experiencia de búsqueda visual.
+                            Oxygarelly, buscador de imágenes dinámico que permite explorar y
+                            buscar imágenes de alta calidad en tiempo real, aprovechando la
+                            API pública de Unsplash. Facilita a los usuarios el acceso rápido
+                            a imágenes categorizadas y personalizables, optimizando la
+                            experiencia de búsqueda visual.
                         </p>
                         <ul className="flex gap-4 items-center mb-10 max-w-96 flex-wrap">
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/html.svg"
+                                    src="svg/carrusel/react.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/js.svg"
+                                    src="svg/carrusel/redux.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/sass.svg"
+                                    src="svg/carrusel/css.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl "
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/php.svg"
-                                    alt="icono projects"
-                                    className="w-12 h-12 drop-shadow-xl"
-                                />
-                            </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                                <img
-                                    src="svg/carrusel/laravel.svg"
-                                    alt="icono projects"
-                                    className="w-12 h-12 drop-shadow-xl"
-                                />
-                            </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                                <img
-                                    src="svg/carrusel/mysql.svg"
+                                    src="svg/carrusel/aws.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
                         </ul>
                         <div className="flex gap-8">
-                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-background-light bg-teal-800  justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
-                                WEBSITE
+                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+                                WEB
                             </button>
-                            <button className="w-28 h-10 rounded-lg flex p-2 bg-teal-800 font-inter tracking-widest text-background-light justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
-                                CODE
+                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+                                CÓDIGO
                             </button>
                         </div>
                     </div>
                 </article>
-                <article className="child3 slides bg-[url('/images/logo.png')] bg-zinc-800  ">
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-[20px]"></div>
+                <article className="child3 slides bg-[url('/images/projects/oxygenShopEdit.png')] bg-zinc-800  ">
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
                     <div
                         id="focus"
-                        className="focusDesactive absolute max-w-[500px] top-[5%] left-[5%]"
+                        className="focusDesactive absolute max-w-[500px] top-[5%] left-[2%]"
                     >
-                        <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
-                            HOTEL MIRANDA
+                        <h1 className="font-train font-bold max-w-60 text-6xl pb-8 text-background-light">
+                            OXYGEN SHOP
                         </h1>
                         <p className="w-[80%] text-background-light tracking-wider mb-6 ">
-                            Hotel Miranda, una aplicación web para gestionar un hotel
-                            ficticio, con funcionalidades completas tanto para los usuarios
-                            como para los administradores.
+                            Oxygen Shop, una aplicación web creada para ofrecer una
+                            experiencia de tienda en línea dinámica y accesible. Con un diseño
+                            intuitivo, Oxygen Shop permite a los usuarios explorar una amplia
+                            variedad de productos y disfrutar de una experiencia de compra
+                            fluida y segura
                         </p>
                         <ul className="flex gap-4 items-center mb-10 max-w-96 flex-wrap">
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
                                     src="svg/carrusel/html.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/js.svg"
+                                    src="svg/carrusel/sass.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/sass.svg"
+                                    src="svg/carrusel/js.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl "
                                 />
                             </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+                            <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                                 <img
-                                    src="svg/carrusel/php.svg"
-                                    alt="icono projects"
-                                    className="w-12 h-12 drop-shadow-xl"
-                                />
-                            </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                                <img
-                                    src="svg/carrusel/laravel.svg"
-                                    alt="icono projects"
-                                    className="w-12 h-12 drop-shadow-xl"
-                                />
-                            </li>
-                            <li className="bg-background-light/10 dark:bg-background-dark/10 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                                <img
-                                    src="svg/carrusel/mysql.svg"
+                                    src="svg/carrusel/gitHub.svg"
                                     alt="icono projects"
                                     className="w-12 h-12 drop-shadow-xl"
                                 />
                             </li>
                         </ul>
                         <div className="flex gap-8">
-                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-background-light bg-teal-800  justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
-                                WEBSITE
+                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+                                WEB
                             </button>
-                            <button className="w-28 h-10 rounded-lg flex p-2 bg-background-dark/60 font-inter tracking-widest text-teal-800 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
-                                CODE
+                            <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+                                CÓDIGO
                             </button>
                         </div>
                     </div>
                 </article>
             </div>
-            <article className="absolute bottom-40 left-32 flex gap-10 z-20 ">
+            <article className="absolute bottom-[116px] left-[40px] flex gap-10 z-20 ">
                 <button
                     className="w-16 h-12 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
                     onClick={handlePrev}

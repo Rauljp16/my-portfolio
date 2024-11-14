@@ -13,7 +13,7 @@ const config: Config = {
     extend: {
       colors: {
         background: {
-          light: "#f0f0f0",
+          light: "#dedede",
           dark: "#1e1e1e",
         },
         foreground: {

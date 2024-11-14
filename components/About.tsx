@@ -45,6 +45,7 @@ function About() {
                         <li>MySql</li>
                         <li>Sass</li>
                         <li>Bem</li>
+                        <li>GitHub</li>
                     </ul>
                 </div>
                 <div className='absolute w-[800] h-[800] top-0 right-0 overflow-hidden blur-sm -z-10'>

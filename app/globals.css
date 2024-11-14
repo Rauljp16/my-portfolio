@@ -41,10 +41,10 @@ body {
 .slides {
   position: absolute;
   top: 65%;
-  left: 65%;
+  left: 68%;
   transform: translateY(50%);
-  width: 13%;
-  height: 210px;
+  width: 16%;
+  height: 250px;
   background-size: cover;
   background-position: center 25%;
   transition: 0.7s;

@@ -22,7 +22,7 @@ function Banner() {
     // ];
 
     return (
-        <div className="relative -top-16 flex h-44 overflow-hidden  mb-10 bg-background-light/80 dark:bg-background-dark/80 transition duration-700 ease-in-out">
+        <div className="relative flex h-44 overflow-hidden  mb-10 bg-background-light/80 dark:bg-background-dark/80 transition duration-700 ease-in-out">
             <div className="absolute w-full h-full bg-gradient"></div>
             <section className="flex justify-between animate-marquee">
                 <article className=" w-36 flex items-center justify-center">

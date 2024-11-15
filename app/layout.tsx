@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`${waterfall.variable} ${inter.variable} ${train.variable} bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark transition-colors duration-700 ease-in-out min-h-dvh`}>
+      <body className={`${waterfall.variable} ${inter.variable} ${train.variable} font-inter bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark transition-colors duration-700 ease-in-out min-h-dvh`}>
         <ThemeProvider defaultTheme="dark" attribute="class">
           {children}
         </ThemeProvider>

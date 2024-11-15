@@ -72,11 +72,11 @@ export default function Home() {
             </article>
           </div>
         </section>
-        <section>
-          <Carrusel />
-        </section>
         <About />
         <Projects />
+        <section className="px-5">
+          <Carrusel />
+        </section>
       </main>
     </>
   );

@@ -23,23 +23,23 @@ function Projects() {
 
         if (slide2.classList.contains("childFocus")) {
             slideFocus.classList.replace("focusDesactive", "focusActive");
-            console.log("si funciona");
         }
+
         if (!slide5.classList.contains("childFocus")) {
             divFocus.classList.replace("focusActive", "focusDesactive");
-            console.log("no funciona");
         }
     };
 
     const handlePrev = () => {
         const slider = document.querySelector(".slider") as HTMLElement;
-        // const divFocus = document.getElementById("focus") as HTMLElement;
+        const divFocus = document.getElementById("focus") as HTMLElement;
 
         const slide2 = slider.children[1] as HTMLElement;
         const slide3 = slider.children[2] as HTMLElement;
         const slide4 = slider.children[3] as HTMLElement;
         const slide5 = slider.children[4] as HTMLElement;
-        // const slideFocus = slide3.children[1] as HTMLElement;
+        const slideFocus = slide2.children[1] as HTMLElement;
+
 
         if (slider) {
             slide5.classList.replace("child3", "childFocus");
@@ -50,14 +50,13 @@ function Projects() {
             slider.insertBefore(slide5, slider.firstElementChild);
         }
 
-        // if (slide2.classList.contains("childFocus")) {
-        //     slideFocus.classList.replace("focusActive", "focusDesactive");
-        //     console.log("si funciona");
-        // }
-        // if (slide5.classList.contains("childFocus")) {
-        //     divFocus.classList.replace("focusActive", "focusDesactive");
-        //     console.log("no funciona");
-        // }
+        if (!slide2.classList.contains("childFocus")) {
+            slideFocus.classList.replace("focusActive", "focusDesactive");
+        }
+
+        if (slide5.classList.contains("childFocus")) {
+            divFocus.classList.replace("focusDesactive", "focusActive");
+        }
 
 
 
@@ -75,10 +74,10 @@ function Projects() {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
                     <div
                         id="focus"
-                        className="focusActive absolute max-w-[450px] top-[5%] left-[2%]"
+                        className="focusActive test absolute max-w-[450px] top-[5%] left-[2%]"
                     >
                         <h1 className="font-train font-bold text-5xl pb-8 text-background-light">
-                            TAQUERIA TAQUEANDO.
+                            TAQUERIA TAQUEANDO
                         </h1>
                         <p className="w-[70%] text-background-light tracking-wider mb-6 ">
                             Taqueria Taqueando, una aplicación web para gestionar un

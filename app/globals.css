@@ -21,25 +21,6 @@ body {
   --svg-fill: #1d1d1d;
 }
 
-/* .bg-gradient {
-  background-image: linear-gradient(
-    to bottom,
-    transparent,
-    #0d948977,
-    transparent
-  );
-} */
-.bg-gradient {
-  background-image: linear-gradient(
-      to bottom,
-      transparent,
-      #0d948977,
-      transparent
-    ),
-    linear-gradient(to right, transparent, #0d948977, transparent),
-    linear-gradient(to left, transparent, #0d948977, transparent);
-}
-
 .slider {
   position: absolute;
   top: 130px;

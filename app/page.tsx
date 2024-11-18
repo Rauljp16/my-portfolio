@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Carrusel from "@/components/Carrusel";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Image from "next/image";
@@ -77,6 +78,7 @@ export default function Home() {
         <section className="px-5">
           <Carrusel />
         </section>
+        <Contact />
       </main>
     </>
   );

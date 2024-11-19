@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Carrusel from "@/components/Carrusel";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Image from "next/image";
@@ -79,6 +80,7 @@ export default function Home() {
           <Carrusel />
         </section>
         <Contact />
+        <Footer />
       </main>
     </>
   );

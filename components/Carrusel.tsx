@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Banner() {
     return (
-        <div className="relative flex h-32 overflow-hidden  mb-10 transition duration-700 ease-in-out">
+        <div className="relative flex h-32 overflow-hidden  mt-10 mb-40 transition duration-700 ease-in-out">
             <div className="absolute w-full h-full"></div>
             <section className="flex justify-between animate-marquee">
                 <article className=" w-36 flex items-center justify-center">

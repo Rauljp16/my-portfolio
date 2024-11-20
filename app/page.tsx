@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main id="home" className="relative flex flex-col w-full">
+      <main id="home" className="relative flex flex-col w-full bg-[url('/svg/bg.svg')]">
         <div className="absolute ">
           <Image
             src="/images/logo.png"
@@ -20,7 +20,7 @@ export default function Home() {
             className="w-40 -ml-1 pt-1 drop-shadow-blackSvg "
           />
         </div>
-        <section className="flex h-full min-h-svh flex-col pt-32 bg-[url('/svg/bg.svg')]">
+        <section className="flex h-full min-h-svh flex-col pt-32 ">
           <div className=" flex h-full items-center justify-around px-8 ">
             <article className="w-2/3 h-full flex flex-col gap-4 justify-between pt-12">
               <div className="pt-12">

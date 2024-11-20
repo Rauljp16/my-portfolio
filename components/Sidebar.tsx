@@ -22,7 +22,7 @@ function Sidebar() {
           </Link>
         </li>
         <li className="w-8 h-8 flex hover:drop-shadow-gold justify-center items-center hover:scale-110 rounded-full transition duration-300 ease-in-out">
-          <Link href="#contact">
+          <Link href="#footer">
             <img src="svg/contact.svg" alt="icono contact" />
           </Link>
         </li>

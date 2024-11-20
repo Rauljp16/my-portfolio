@@ -65,7 +65,7 @@ function Projects() {
     return (
         <section
             id="projects"
-            className="relative w-full h-screen overflow-hidden flex justify-center items-center bg-[url('/svg/bg.svg')]"
+            className="relative w-full h-screen overflow-hidden flex justify-center items-center "
         >
             <div className="absolute top-0 left-0 w-full h-[5%] bg-background-light/50 dark:bg-background-dark/50 transition duration-700 ease-in-out"></div>
             <div className="absolute top-0 left-0 w-full h-[10%] bg-background-light/50 dark:bg-background-dark/50 transition duration-700 ease-in-out"></div>

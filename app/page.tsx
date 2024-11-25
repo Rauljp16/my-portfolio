@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main id="home" className="relative flex flex-col w-full bg-[url('/svg/bg.svg')]">
+      <main className="relative flex flex-col w-full ">
         <div className="absolute ">
           <Image
             src="/images/logo.png"
@@ -20,7 +20,7 @@ export default function Home() {
             className="w-40 -ml-1 pt-1 drop-shadow-blackSvg "
           />
         </div>
-        <section className="flex h-full min-h-svh flex-col pt-32 ">
+        <section id="home" className="flex h-full min-h-svh flex-col pt-32 ">
           <div className=" flex h-full items-center justify-around px-8 ">
             <article className="w-2/3 h-full flex flex-col gap-4 justify-between pt-12">
               <div className="pt-12">
@@ -32,29 +32,31 @@ export default function Home() {
                 </h1>
               </div>
               <p className="text-md tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear  max-w-[500px] mb-4">
-                Desarrollador de aplicaciones web que combinan estructura y usabilidad. <br />
-                Cada proyecto es una oportunidad para crear experiencias digitales que marcan la diferencia.
+                Desarrollador de aplicaciones web que combinan estructura y
+                usabilidad. <br />
+                Cada proyecto es una oportunidad para crear experiencias
+                digitales que marcan la diferencia.
               </p>
               <p className="text-lg text-transparent font-inter bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
                 ¡Espero que lo disfrutes tanto como yo al crearlo!
               </p>
               <div className="mt-12 mb-20">
                 <ul className="flex gap-10">
-                  <button className="flex items-center h-10 pl-5 pr-3 gap-4 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center hover:scale-105 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
+                  <button className="flex items-center h-12 pl-5 pr-3 gap-4 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center hover:scale-105 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
                     <p className="text-lg text-goldDark">CV</p>
                     <img src="svg/download.svg" alt="icono cv" />
                   </button>
-                  <li className="w-10 h-10 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
+                  <li className="w-12 h-12 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
                     <Link href="/">
                       <img src="svg/linkedin.svg" alt="icono linkedin" />
                     </Link>
                   </li>
-                  <li className="w-10 h-10 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
+                  <li className="w-12 h-12 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
                     <Link href="/">
                       <img src="svg/gitHub.svg" alt="icono gitHub" />
                     </Link>
                   </li>
-                  <li className="w-10 h-10 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
+                  <li className="w-12 h-12 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
                     <Link href="/">
                       <img src="svg/contact.svg" alt="icono contact" />
                     </Link>

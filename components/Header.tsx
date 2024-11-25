@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar";
 
 function Header() {
   return (
-    <div className="fixed w-full top-6 left-0 flex items-center justify-center z-50">
-      <div className=" rounded-3xl px-4 py-2 flex gap-10 items-center backdrop-blur-lg bg-background-light dark:bg-background-dark transition ease-in-out duration-700 shadow-[0px_2px_6px_#ac8661] ">
+    <div className="fixed w-full top-6 left-0 flex bg-transparent items-center justify-center z-50">
+      <div className=" rounded-lg py-3 px-3 flex gap-4 items-center bg-background-light/60 dark:bg-background-dark/60 backdrop-filter backdrop-blur-lg bg-opacity-40 transition ease-in-out duration-700 border border-goldDark/40 ">
         <Sidebar />
         <ButtonTheme />
       </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import About from "@/components/About";
 import Carrusel from "@/components/Carrusel";
 import Footer from "@/components/Footer";
@@ -7,6 +9,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const handleDownload = () => {
+    const pdfPath = "/CV-Raul.pdf";
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "CV Raúl Jerez Pagán.pdf";
+    link.click();
+  };
   return (
     <>
       <Header />
@@ -42,23 +51,49 @@ export default function Home() {
               </p>
               <div className="mt-12 mb-20">
                 <ul className="flex gap-10">
-                  <button className="flex items-center h-12 pl-5 pr-3 gap-4 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center hover:scale-105 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
+                  <button
+                    onClick={handleDownload}
+                    className="flex items-center h-12 pl-5 pr-3 gap-4 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center hover:scale-105 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out"
+                  >
                     <p className="text-lg text-goldDark">CV</p>
-                    <img src="svg/download.svg" alt="icono cv" />
+                    <Image
+                      src="svg/download.svg"
+                      alt="icono cv"
+                      width={30}
+                      height={30}
+                    />
                   </button>
                   <li className="w-12 h-12 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
-                    <Link href="/">
-                      <img src="svg/linkedin.svg" alt="icono linkedin" />
+                    <Link
+                      target="_blank"
+                      href="https://www.linkedin.com/in/ra%C3%BAl-jerez-pag%C3%A1n-35570927a/"
+                    >
+                      <Image
+                        src="svg/linkedin.svg"
+                        alt="icono linkedin"
+                        width={30}
+                        height={30}
+                      />
                     </Link>
                   </li>
                   <li className="w-12 h-12 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
-                    <Link href="/">
-                      <img src="svg/gitHub.svg" alt="icono gitHub" />
+                    <Link target="_blank" href="https://github.com/Rauljp16">
+                      <Image
+                        src="svg/gitHub.svg"
+                        alt="icono gitHub"
+                        width={30}
+                        height={30}
+                      />
                     </Link>
                   </li>
                   <li className="w-12 h-12 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
-                    <Link href="/">
-                      <img src="svg/contact.svg" alt="icono contact" />
+                    <Link href="mailto:raul_astra16@hotmail.com">
+                      <Image
+                        src="svg/contact.svg"
+                        alt="icono contact"
+                        width={30}
+                        height={30}
+                      />
                     </Link>
                   </li>
                 </ul>

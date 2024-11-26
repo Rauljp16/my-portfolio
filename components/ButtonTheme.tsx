@@ -11,7 +11,7 @@ function ButtonTheme() {
 
   return (
     <div>
-      <div className="flex  p-3 rounded-lg gap-2 items-center font-bold tracking-wide text-goldDark">
+      <div className="flex border border-goldDark p-3 rounded-lg gap-2 items-center font-bold tracking-wide text-goldDark">
         <p className="text-xs">dark</p>
         <label className="relative inline-flex items-center cursor-pointer">
           <input

@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
+
 function Projects() {
   const handleNext = () => {
     const slider = document.querySelector(".slider") as HTMLElement;
@@ -80,41 +83,57 @@ function Projects() {
             </p>
             <ul className="flex gap-4 items-center mb-9 max-w-64 flex-wrap ">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/js.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/tailwind.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl "
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
             </ul>
             <div className="flex gap-8">
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+              <Link
+                target="_blank"
+                href="https://github.com/Rauljp16/Restaurante-mexicano"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+              >
                 WEB
-              </button>
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/Rauljp16/Restaurante-mexicano"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+              >
                 CÓDIGO
-              </button>
+              </Link>
             </div>
           </div>
         </article>
@@ -134,62 +153,84 @@ function Projects() {
             </p>
             <ul className="flex gap-4 items-center mb-9 max-w-80 flex-wrap">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/html.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/js.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/sass.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl "
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/php.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/laravel.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/mysql.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
             </ul>
             <div className="flex gap-8">
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+              <Link
+                target="_blank"
+                href="http://13.38.228.91"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+              >
                 WEB
-              </button>
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/Rauljp16/Miranda-Laravel"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+              >
                 CÓDIGO
-              </button>
+              </Link>
             </div>
           </div>
         </article>
@@ -210,48 +251,66 @@ function Projects() {
             </p>
             <ul className="flex gap-4 items-center mb-9 max-w-64 flex-wrap ">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/ts.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/styled.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl "
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/mysql.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
             </ul>
             <div className="flex gap-8">
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+              <Link
+                target="_blank"
+                href="https://d17y33nb4a9wqn.cloudfront.net/"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+              >
                 WEB
-              </button>
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/Rauljp16/Dashboard-"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+              >
                 CÓDIGO
-              </button>
+              </Link>
             </div>
           </div>
         </article>
@@ -273,41 +332,57 @@ function Projects() {
             </p>
             <ul className="flex gap-4 items-center mb-10 max-w-96 flex-wrap">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/redux.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/css.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl "
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
             </ul>
             <div className="flex gap-8">
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+              <Link
+                target="_blank"
+                href="https://d2y2vhecn82g01.cloudfront.net/"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+              >
                 WEB
-              </button>
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/Rauljp16/oxygallery"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+              >
                 CÓDIGO
-              </button>
+              </Link>
             </div>
           </div>
         </article>
@@ -329,41 +404,57 @@ function Projects() {
             </p>
             <ul className="flex gap-4 items-center mb-10 max-w-96 flex-wrap">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/html.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/sass.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/js.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl "
+                  width={30}
+                  height={30}
                 />
               </li>
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
-                <img
+                <Image
                   src="svg/carrusel/gitHub.svg"
                   alt="icono projects"
                   className="w-12 h-12 drop-shadow-xl"
+                  width={30}
+                  height={30}
                 />
               </li>
             </ul>
             <div className="flex gap-8">
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out">
+              <Link
+                target="_blank"
+                href="https://rauljp16.github.io/OxygenShop/"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+              >
                 WEB
-              </button>
-              <button className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out">
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/Rauljp16/OxygenShop"
+                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+              >
                 CÓDIGO
-              </button>
+              </Link>
             </div>
           </div>
         </article>
@@ -373,13 +464,25 @@ function Projects() {
           className="w-16 h-12 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
           onClick={handlePrev}
         >
-          <img src="/svg/arrowleft.svg" className="h-9 w-9" />
+          <Image
+            src="svg/arrowLeft.svg"
+            alt="buttom"
+            className="h-9 w-9"
+            width={30}
+            height={30}
+          />
         </button>
         <button
           className="w-16 h-12 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
           onClick={handleNext}
         >
-          <img src="/svg/arrowRight.svg" className="h-9 w-9" />
+          <Image
+            src="svg/arrowRight.svg"
+            alt="buttom"
+            className="h-9 w-9"
+            width={30}
+            height={30}
+          />
         </button>
       </article>
     </section>

@@ -16,7 +16,11 @@ function Footer() {
         </div>
         <ul className="flex gap-10">
           <li>
-            <Link href="" className="flex items-center gap-1 text-goldDark">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/ra%C3%BAl-jerez-pag%C3%A1n-35570927a/"
+              className="flex items-center gap-1 text-goldDark"
+            >
               <Image
                 src="svg/linkedin.svg"
                 alt="icon carrusel"
@@ -28,9 +32,13 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="" className="flex items-center gap-1 text-goldDark">
+            <Link
+              target="_blank"
+              href="https://github.com/Rauljp16"
+              className="flex items-center gap-1 text-goldDark"
+            >
               <Image
-                src="svg/github.svg"
+                src="svg/gitHub.svg"
                 alt="icon carrusel"
                 width={36}
                 height={36}

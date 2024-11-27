@@ -18,22 +18,26 @@ export default function Home() {
   };
   return (
     <>
-      <Header />
-      <main className="relative flex flex-col w-full ">
-        <div className="absolute ">
+      {/* <Header /> */}
+      <main className="relative flex flex-col">
+        <div className="absolute">
           <Image
             src="/images/logo.png"
             alt="Logo"
             width={2000}
             height={2000}
-            className="w-40 -ml-1 pt-1 drop-shadow-blackSvg "
+            className="w-32 md:w-40 -ml-1 pt-1 drop-shadow-blackSvg "
           />
         </div>
-        <section id="home" className="flex h-full min-h-svh flex-col pt-32 ">
-          <div className=" flex h-full items-center justify-around px-8 ">
-            <article className="w-2/3 h-full flex flex-col gap-4 justify-between pt-12">
-              <div className="pt-12">
-                <h3 className=" font-bold mb-2 text-5xl font-waterfall text-teal-600 tracking-wide drop-shadow-teal dark:drop-shadow-teal rounded-xl px-1 -left-1  max-w-fit transition duration-700 ease-in-out">
+
+        <section
+          id="home"
+          className="flex h-full min-h-svh flex-col pt-16 lg:pt-32 "
+        >
+          <div className=" flex flex-col-reverse lg:flex-row h-full items-center justify-around px-4 lg:px-8 ">
+            <article className="lg:w-2/3 h-full flex flex-col gap-4 justify-between lg:pt-12">
+              <div className="lg:pt-12">
+                <h3 className=" font-bold m-auto mt-3 text-4xl lg:text-5xl font-waterfall text-teal-600 tracking-wide drop-shadow-teal dark:drop-shadow-teal rounded-xl max-w-fit transition duration-700 ease-in-out">
                   Raúl Jerez Pagán
                 </h3>
                 <h1 className="text-[63px] font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-2 mb-6">
@@ -50,7 +54,7 @@ export default function Home() {
                 ¡Espero que lo disfrutes tanto como yo al crearlo!
               </p>
               <div className="mt-12 mb-20">
-                <ul className="flex gap-10">
+                <ul className="flex justify-between max-w-96 lg:gap-10">
                   <button
                     onClick={handleDownload}
                     className="flex items-center h-12 pl-5 pr-3 gap-4 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center hover:scale-105 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out"
@@ -99,13 +103,13 @@ export default function Home() {
                 </ul>
               </div>
             </article>
-            <article className=" w-1/3 flex justify-end items-center">
+            <article className="w-full">
               <Image
                 src="/images/raul.png"
                 alt="Logo"
                 width={600}
                 height={600}
-                className="w-96"
+                className="w-44 ml-auto lg:w-96"
               />
             </article>
           </div>

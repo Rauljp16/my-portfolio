@@ -18,7 +18,7 @@ export default function Home() {
   };
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main className="relative flex flex-col">
         <div className="absolute">
           <Image

@@ -47,7 +47,7 @@ function Sidebar() {
 
   return (
     <div>
-      <ul className="flex text-goldDark font-bold justify-center gap-4 rounded-[30px] transition duration-700 ease-in-out">
+      <ul className="flex flex-col lg:flex-row text-goldDark font-bold justify-center gap-4 rounded-[30px] transition duration-700 ease-in-out">
         <li
           className={`flex p-3 border border-goldDark rounded-lg justify-center items-center cursor-pointer ${
             activeSection === "home"

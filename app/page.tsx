@@ -7,8 +7,15 @@ import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [activeMenu, setActiveMenu] = useState<boolean>(false);
+
+  const handleMenu = () => {
+    setActiveMenu(!activeMenu);
+  };
+
   const handleDownload = () => {
     const pdfPath = "/CV-Raul.pdf";
     const link = document.createElement("a");
@@ -29,6 +36,25 @@ export default function Home() {
             height={2000}
             className="w-32 md:w-40 -ml-1 pt-1 drop-shadow-blackSvg "
           />
+        </div>
+        <div className="absolute top-5 right-5 cursor-pointer z-50">
+          {activeMenu ? (
+            <Image
+              src="svg/menu.svg"
+              alt="icono menu burguer"
+              width={30}
+              height={30}
+              onClick={handleMenu}
+            />
+          ) : (
+            <Image
+              src="svg/close.svg"
+              alt="icono menu burguer"
+              width={30}
+              height={30}
+              onClick={handleMenu}
+            />
+          )}
         </div>
 
         <section
@@ -104,13 +130,13 @@ export default function Home() {
                 </ul>
               </div>
             </article>
-            <article className="w-full">
+            <article className="w-full flex justify-center">
               <Image
                 src="/images/raul.png"
                 alt="Logo"
                 width={600}
                 height={600}
-                className="w-44 ml-auto lg:w-96"
+                className="w-44 lg:w-96"
               />
             </article>
           </div>

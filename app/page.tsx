@@ -16,6 +16,7 @@ export default function Home() {
     link.download = "CV Raúl Jerez Pagán.pdf";
     link.click();
   };
+
   return (
     <>
       <Header />
@@ -32,7 +33,7 @@ export default function Home() {
 
         <section
           id="home"
-          className="flex h-full min-h-svh flex-col pt-16 lg:pt-32 "
+          className="flex h-full min-h-svh flex-col pt-16 lg:pt-32"
         >
           <div className=" flex flex-col-reverse lg:flex-row h-full items-center justify-around px-4 lg:px-8 ">
             <article className="lg:w-2/3 h-full flex flex-col gap-4 justify-between lg:pt-12">

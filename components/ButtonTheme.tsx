@@ -10,19 +10,18 @@ function ButtonTheme() {
   };
 
   return (
-    <div>
-      <div className="flex border border-goldDark p-3 rounded-lg gap-2 items-center font-bold tracking-wide text-goldDark">
-        <p className="text-xs">dark</p>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            checked={resolvedTheme === "light"}
-            onChange={toggleTheme}
-            type="checkbox"
-            value=""
-            className="sr-only peer"
-          />
-          <div
-            className="w-12 h-6 bg-transparent hover:bg-transparent peer-focus:outline-0 peer-focus:ring-transparent 
+    <div className="absolute w-fit scale-75 flex left-2 top-6 z-40 rounded-lg gap-2 items-center font-bold tracking-wide text-goldDark">
+      <p className="text-xs">dark</p>
+      <label className="relative inline-flex items-center cursor-pointer">
+        <input
+          checked={resolvedTheme === "light"}
+          onChange={toggleTheme}
+          type="checkbox"
+          value=""
+          className="sr-only peer"
+        />
+        <div
+          className="w-12 h-6 bg-transparent hover:bg-transparent peer-focus:outline-0 peer-focus:ring-transparent 
                         rounded-lg peer transition-all duration-700 ease-in-out 
                         peer-checked:after:translate-x-6 peer-checked:after:border-transparent 
                         after:content-[''] after:absolute after:top-[3px] after:left-[3px] 
@@ -30,10 +29,9 @@ function ButtonTheme() {
                         after:border-transparent after:border after:rounded-md after:h-[18px] 
                         after:w-[18px] after:transition-transform after:duration-[700ms] 
                         peer-checked:bg-transparent hover:peer-checked:bg-transparent border border-goldDark"
-          ></div>
-        </label>
-        <p className="text-xs">light</p>
-      </div>
+        ></div>
+      </label>
+      <p className="text-xs">light</p>
     </div>
   );
 }

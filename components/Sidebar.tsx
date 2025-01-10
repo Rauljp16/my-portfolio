@@ -3,8 +3,18 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-function Sidebar() {
+type SidebarProps = {
+  activeMenu: boolean;
+  setActiveMenu: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+function Sidebar({ activeMenu, setActiveMenu }: SidebarProps) {
   const [activeSection, setActiveSection] = useState<string>("home");
+
+  const handleClick = () => {
+    console.log("click");
+    setActiveMenu(!activeMenu);
+  };
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -47,7 +57,10 @@ function Sidebar() {
 
   return (
     <div>
-      <ul className="flex flex-col lg:flex-row text-goldDark font-bold justify-center gap-4 rounded-[30px] transition duration-700 ease-in-out">
+      <ul
+        className="flex flex-col my-12 lg:my-0 lg:flex-row text-goldDark font-bold justify-center gap-6 lg:gap-4 rounded-[30px] transition duration-700 ease-in-out"
+        onClick={() => handleClick()}
+      >
         <li
           className={`flex p-3 border border-goldDark rounded-lg justify-center items-center cursor-pointer ${
             activeSection === "home"

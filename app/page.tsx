@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-  const [activeMenu, setActiveMenu] = useState<boolean>(false);
+  const [activeMenu, setActiveMenu] = useState<boolean>(true);
 
   const handleMenu = () => {
     setActiveMenu(!activeMenu);
@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <Header activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
       <main className="relative flex flex-col">
         <div className="absolute">
           <Image
@@ -37,7 +37,7 @@ export default function Home() {
             className="w-32 md:w-40 -ml-1 pt-1 drop-shadow-blackSvg "
           />
         </div>
-        <div className="absolute top-5 right-5 cursor-pointer z-50">
+        <div className="lg:hidden fixed top-5 right-5 cursor-pointer z-50">
           {activeMenu ? (
             <Image
               src="svg/menu.svg"

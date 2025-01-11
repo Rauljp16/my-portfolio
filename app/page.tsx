@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/About";
+import ButtonTheme from "@/components/ButtonTheme";
 import Carrusel from "@/components/Carrusel";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -39,13 +40,16 @@ export default function Home() {
         </div>
         <div className="lg:hidden fixed top-5 right-5 cursor-pointer z-50">
           {activeMenu ? (
-            <Image
-              src="svg/menu.svg"
-              alt="icono menu burguer"
-              width={30}
-              height={30}
-              onClick={handleMenu}
-            />
+            <div className="flex flex-row">
+              <ButtonTheme />
+              <Image
+                src="svg/menu.svg"
+                alt="icono menu burguer"
+                width={30}
+                height={30}
+                onClick={handleMenu}
+              />
+            </div>
           ) : (
             <Image
               src="svg/close.svg"
@@ -59,19 +63,17 @@ export default function Home() {
 
         <section
           id="home"
-          className="flex h-full min-h-svh flex-col pt-16 lg:pt-32"
+          className="relative flex h-full min-h-svh flex-col pt-28 lg:pt-10 mb-20"
         >
-          <div className=" flex flex-col-reverse lg:flex-row h-full items-center justify-around px-4 lg:px-8 ">
-            <article className="lg:w-2/3 h-full flex flex-col gap-4 justify-between lg:pt-12">
-              <div className="lg:pt-12">
-                <h3 className=" font-bold m-auto mt-3 text-4xl lg:text-5xl font-waterfall text-teal-600 tracking-wide drop-shadow-teal dark:drop-shadow-teal rounded-xl max-w-fit transition duration-700 ease-in-out">
-                  Raúl Jerez Pagán
-                </h3>
-                <h1 className="text-[63px] font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-2 mb-6">
-                  Full Stack Developer
-                </h1>
-              </div>
-              <p className="text-md tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear  max-w-[500px] mb-4">
+          <div className=" flex flex-col-reverse lg:flex-row h-full lg:h-screen items-center justify-around gap-4 lg:gap-0  px-4 lg:px-8 ">
+            <article className=" lg:w-1/2 h- flex flex-col gap-8 justify-between">
+              <h3 className=" font-bold mt-3 text-4xl lg:text-5xl font-waterfall text-teal-600 tracking-wide drop-shadow-teal dark:drop-shadow-teal rounded-xl max-w-fit transition duration-700 ease-in-out">
+                Raúl Jerez Pagán
+              </h3>
+              <h1 className="w-fit text-3xl lg:text-6xl  font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
+                Full Stack Developer
+              </h1>
+              <p className="text-md tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear ">
                 Desarrollador de aplicaciones web que combinan estructura y
                 usabilidad. <br />
                 Cada proyecto es una oportunidad para crear experiencias
@@ -80,8 +82,8 @@ export default function Home() {
               <p className="text-lg text-transparent font-inter bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
                 ¡Espero que lo disfrutes tanto como yo al crearlo!
               </p>
-              <div className="mt-12 mb-20">
-                <ul className="flex justify-between max-w-96 lg:gap-10">
+              <div>
+                <ul className="flex mx-auto justify-between max-w-96 lg:gap-10">
                   <button
                     onClick={handleDownload}
                     className="flex items-center h-12 pl-5 pr-3 gap-4 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center hover:scale-105 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out"
@@ -130,13 +132,13 @@ export default function Home() {
                 </ul>
               </div>
             </article>
-            <article className="w-full flex justify-center">
+            <article className="lg:w-1/2 flex justify-center">
               <Image
                 src="/images/raul.png"
                 alt="Logo"
                 width={600}
                 height={600}
-                className="w-44 lg:w-96"
+                className="w-3/5 lg:w-4/5"
               />
             </article>
           </div>

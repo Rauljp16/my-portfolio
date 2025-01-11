@@ -219,7 +219,7 @@ function Projects() {
             <div className="flex gap-8">
               <Link
                 target="_blank"
-                href="http://13.38.228.91"
+                href="http://13.39.47.117/"
                 className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB

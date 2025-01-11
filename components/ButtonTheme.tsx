@@ -10,7 +10,7 @@ function ButtonTheme() {
   };
 
   return (
-    <div className="absolute lg:relative w-fit scale-75 md:scale-90 lg:scale-100 flex left-2 lg:left-0 lg:top-0 top-6 z-40 rounded-lg gap-2 items-center font-bold tracking-wide text-goldDark">
+    <div className="relative w-fit scale-75 md:scale-90 lg:scale-100 flex left-0 lg:left-0 lg:top-0  z-40 rounded-lg gap-2 items-center font-bold tracking-wide text-goldDark">
       <p className="text-xs">dark</p>
       <label className="relative inline-flex items-center cursor-pointer">
         <input

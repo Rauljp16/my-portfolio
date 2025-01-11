@@ -28,7 +28,7 @@ function Header({ activeMenu, setActiveMenu }: HeaderProps) {
       >
         <div className="w-full lg:w-auto lg:rounded-lg py-3 px-3 flex gap-4 justify-center bg-background-light/60 dark:bg-background-dark transition ease-in-out duration-700 border-b lg:border border-goldDark/40 ">
           <Sidebar setActiveMenu={setActiveMenu} activeMenu={activeMenu} />
-          <ButtonTheme />
+          {activeMenu ? <ButtonTheme /> : null}
         </div>
       </div>
     </>

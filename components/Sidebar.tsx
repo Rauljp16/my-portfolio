@@ -13,7 +13,7 @@ function Sidebar({ activeMenu, setActiveMenu }: SidebarProps) {
 
   const handleClick = () => {
     console.log("click");
-    setActiveMenu(!activeMenu);
+    setActiveMenu(true);
   };
 
   useEffect(() => {

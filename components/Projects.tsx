@@ -64,29 +64,29 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full h-screen overflow-hidden flex justify-center items-center "
+      className="relative w-full h-screen overflow-hidden flex justify-center items-center"
     >
-      <div className="slider overflow-hidden">
+      <div className="slider w-[93%] h-[75%] overflow-hidden">
         <article className="relative childFocus slides bg-[url('/images/projects/taqueria.png')]">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
           <div
             id="focus"
-            className="focusActive test absolute max-w-[450px] top-[5%] left-[2%]"
+            className="focusActive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
           >
-            <h1 className="font-train font-bold text-5xl pb-8 text-background-light">
+            <h1 className="font-train w-4/5 text-4xl font-bold text-background-light">
               TAQUERIA TAQUEANDO
             </h1>
-            <p className="w-[70%] text-background-light tracking-wider mb-6 ">
+            <p className="w-4/6 text-background-light tracking-wider">
               Taqueria Taqueando, una aplicación web para gestionar un
               restaurante mexicano ficticio, con funcionalidades completas tanto
               para los clientes como para el equipo de administración.
             </p>
-            <ul className="flex gap-4 items-center mb-9 max-w-64 flex-wrap ">
+            <ul className="flex gap-4 items-center w-4/5 flex-wrap ">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -95,7 +95,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/js.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -104,7 +104,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/tailwind.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl "
+                  className="w-10 h-10 drop-shadow-xl "
                   width={30}
                   height={30}
                 />
@@ -113,24 +113,24 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
               </li>
             </ul>
-            <div className="flex gap-8">
+            <div className="flex gap-4">
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -141,22 +141,22 @@ function Projects() {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
           <div
             id="focus"
-            className="focusActive absolute max-w-[500px] top-[5%] left-[2%] "
+            className="focusActive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
           >
-            <h1 className="font-train font-bold text-6xl pb-8 text-background-light">
+            <h1 className="font-train w-4/5 text-4xl font-bold text-background-light">
               HOTEL MIRANDA
             </h1>
-            <p className="w-[80%] text-background-light tracking-wider mb-6 max-w-72">
+            <p className="w-3/4 text-background-light tracking-wider">
               Hotel Miranda, una aplicación web para gestionar un hotel
               ficticio, con funcionalidades completas tanto para los usuarios
               como para los administradores.
             </p>
-            <ul className="flex gap-4 items-center mb-9 max-w-80 flex-wrap">
+            <ul className="flex gap-4 items-center w-2/3 flex-wrap">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/html.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -165,7 +165,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/js.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -174,7 +174,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/sass.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl "
+                  className="w-10 h-10 drop-shadow-xl "
                   width={30}
                   height={30}
                 />
@@ -183,7 +183,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/php.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -192,7 +192,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/laravel.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -201,7 +201,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/mysql.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -210,7 +210,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -220,14 +220,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="http://13.39.47.117/"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Miranda-Laravel"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -238,23 +238,23 @@ function Projects() {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10  rounded-[20px]"></div>
           <div
             id="focus"
-            className="focusDesactive absolute max-w-[500px] top-[5%] left-[2%]"
+            className="focusActive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
           >
-            <h1 className="font-train font-bold text-5xl pb-8 text-background-light">
+            <h1 className="font-train w-4/5 text-4xl font-bold text-background-light">
               DASHBOARD MIRANDA
             </h1>
-            <p className="w-[80%] text-background-light tracking-wider mb-6 max-w-[340px]">
+            <p className="w-4/6 text-background-light tracking-wider">
               Dashboard Miranda, una aplicación diseñad apara la gestión interna
               del Hotel Miranda. Facilita el control de reservas, administración
               de habitaciones, monitoreo de la ocupación, y gestión de
               servicios, optimizando la operatividad diaria del hotel.
             </p>
-            <ul className="flex gap-4 items-center mb-9 max-w-64 flex-wrap ">
+            <ul className="flex gap-4 items-center w-4/5 flex-wrap ">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -263,7 +263,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/ts.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -272,7 +272,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/styled.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl "
+                  className="w-10 h-10 drop-shadow-xl "
                   width={30}
                   height={30}
                 />
@@ -281,7 +281,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/mysql.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -290,7 +290,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -300,14 +300,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://d17y33nb4a9wqn.cloudfront.net/"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Dashboard-"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -318,24 +318,24 @@ function Projects() {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
           <div
             id="focus"
-            className="focusDesactive absolute max-w-[500px] top-[5%] left-[2%] "
+            className="focusActive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
           >
-            <h1 className="font-train font-bold text-5xl pb-8 text-background-light">
+            <h1 className="font-train w-4/5 text-4xl font-bold text-background-light">
               OXYGALLERY
             </h1>
-            <p className="w-[80%] text-background-light tracking-wider mb-6 ">
+            <p className="w-4/6 text-background-light tracking-wider">
               Oxygarelly, buscador de imágenes dinámico que permite explorar y
               buscar imágenes de alta calidad en tiempo real, aprovechando la
               API pública de Unsplash. Facilita a los usuarios el acceso rápido
               a imágenes categorizadas y personalizables, optimizando la
               experiencia de búsqueda visual.
             </p>
-            <ul className="flex gap-4 items-center mb-10 max-w-96 flex-wrap">
+            <ul className="flex gap-4 items-center w-4/5 flex-wrap ">
               <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -344,7 +344,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/redux.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -353,7 +353,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/css.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl "
+                  className="w-10 h-10 drop-shadow-xl "
                   width={30}
                   height={30}
                 />
@@ -362,7 +362,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-12 h-12 drop-shadow-xl"
+                  className="w-10 h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -372,14 +372,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://d2y2vhecn82g01.cloudfront.net/"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/oxygallery"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -459,9 +459,9 @@ function Projects() {
           </div>
         </article>
       </div>
-      <article className="absolute bottom-[116px] left-[40px] flex gap-10 z-20 ">
+      <article className="absolute bottom-[10%] left-[6%] flex gap-10 z-20 ">
         <button
-          className="w-16 h-12 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
+          className="w-14 h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
           onClick={handlePrev}
         >
           <Image
@@ -473,7 +473,7 @@ function Projects() {
           />
         </button>
         <button
-          className="w-16 h-12 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
+          className="w-14 h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
           onClick={handleNext}
         >
           <Image

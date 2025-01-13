@@ -23,10 +23,10 @@ body {
 
 .slider {
   position: absolute;
-  top: 130px;
-  right: 24px;
-  bottom: 90px;
-  left: 24px;
+  top: auto;
+  right: auto;
+  bottom: 8%;
+  left: auto;
   border-radius: 20px;
 }
 

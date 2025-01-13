@@ -238,7 +238,7 @@ function Projects() {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10  rounded-[20px]"></div>
           <div
             id="focus"
-            className="focusActive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
+            className="focusDesactive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
           >
             <h1 className="font-train w-4/5 text-4xl font-bold text-background-light">
               DASHBOARD MIRANDA
@@ -318,7 +318,7 @@ function Projects() {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
           <div
             id="focus"
-            className="focusActive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
+            className="focusDesactive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
           >
             <h1 className="font-train w-4/5 text-4xl font-bold text-background-light">
               OXYGALLERY

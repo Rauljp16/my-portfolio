@@ -12,7 +12,6 @@ function Sidebar({ activeMenu, setActiveMenu }: SidebarProps) {
   const [activeSection, setActiveSection] = useState<string>("home");
 
   const handleClick = () => {
-    console.log("click");
     setActiveMenu(true);
   };
 
@@ -38,7 +37,6 @@ function Sidebar({ activeMenu, setActiveMenu }: SidebarProps) {
       const documentHeight = document.documentElement.scrollHeight;
 
       if (scrollPosition >= documentHeight - 10) {
-        // Si estás al final del scroll
         const lastSection = document.querySelector("footer");
         if (lastSection) {
           const id = lastSection.getAttribute("id");

@@ -64,56 +64,67 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full h-screen overflow-hidden flex justify-center items-center"
+      className="relative w-full h-screen overflow-hidden flex flex-col justify-start items-center pt-20 lg:pt-32 px-4"
     >
-      <div className="slider w-[93%] h-[75%] overflow-hidden">
-        <article className="relative childFocus slides bg-[url('/images/projects/taqueria.png')]">
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
+      <h1 className="relative mr-auto pb-6 text-3xl lg:text-6xl font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
+        Projects
+      </h1>
+
+      <div className="relative slider w-full h-[70%] md:w-[55%] md:h-[80%] lg:w-[100%] lg:h-[75%] overflow-hidden">
+        <article className="relative childFocus slides bg-neutral-700 lg:bg-none p-3 md:p-18 lg:p-0">
+          <Image
+            src="/images/projects/taqueria.png"
+            alt="project taqueria"
+            className="w-full h-auto lg:w-full lg:h-full rounded-[20px]"
+            width={1300}
+            height={1300}
+          />
+          <div className=""></div>
           <div
             id="focus"
-            className="focusActive flex flex-col gap-6 absolute w-2/5 h-1/2 top-[5%] left-[2%]"
+            className="focusActive flex flex-col gap-4 lg:absolute lg:w-2/5 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
-            <h1 className="font-train w-4/5 text-4xl font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-3xl font-bold text-background-light">
               TAQUERIA TAQUEANDO
             </h1>
-            <p className="w-4/6 text-background-light tracking-wider">
+            <p className="w-[90%] lg:w-4/6 text-background-light">
               Taqueria Taqueando, una aplicación web para gestionar un
               restaurante mexicano ficticio, con funcionalidades completas tanto
               para los clientes como para el equipo de administración.
             </p>
-            <ul className="flex gap-4 items-center w-4/5 flex-wrap ">
-              <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+            <ul className="flex gap-2 items-center w-fit bg-background-dark/80  flex-wrap p-1 rounded-xl">
+              <li className="lg:bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
-                  className="w-10 h-10 drop-shadow-xl"
+                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
               </li>
-              <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+              <li className="lg:bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/js.svg"
                   alt="icono projects"
-                  className="w-10 h-10 drop-shadow-xl"
+                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
               </li>
-              <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+              <li className="lg:bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/tailwind.svg"
                   alt="icono projects"
-                  className="w-10 h-10 drop-shadow-xl "
+                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
               </li>
-              <li className="bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
+              <li className="lg:bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-10 h-10 drop-shadow-xl"
+                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -123,14 +134,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-xs text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-xs text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -220,14 +231,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="http://13.39.47.117/"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Miranda-Laravel"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -300,14 +311,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://d17y33nb4a9wqn.cloudfront.net/"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Dashboard-"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -372,14 +383,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://d2y2vhecn82g01.cloudfront.net/"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/oxygallery"
-                className="w-24 h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -444,14 +455,14 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://rauljp16.github.io/OxygenShop/"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 WEB
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/OxygenShop"
-                className="w-28 h-10 rounded-lg flex p-2 font-inter tracking-widest font-bold text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 border-[1px] border-goldDark  transition duration-700 ease-in-out"
+                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-sm text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 font-bold justify-center items-center hover:scale-110 border-[1px] border-goldDark transition duration-700 ease-in-out"
               >
                 CÓDIGO
               </Link>
@@ -459,9 +470,9 @@ function Projects() {
           </div>
         </article>
       </div>
-      <article className="absolute bottom-[10%] left-[6%] flex gap-10 z-20 ">
+      <article className="relative lg:absolute scale-75 top-[-1%] lg:bottom-[10%] left-[20%] lg:left-[6%] flex justify-normal gap-10 z-20 ">
         <button
-          className="w-14 h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
+          className="w-14 lg:h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
           onClick={handlePrev}
         >
           <Image
@@ -473,7 +484,7 @@ function Projects() {
           />
         </button>
         <button
-          className="w-14 h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
+          className="w-14 lg:h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
           onClick={handleNext}
         >
           <Image

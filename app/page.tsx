@@ -65,7 +65,7 @@ export default function Home() {
           id="home"
           className="relative flex h-full min-h-svh flex-col pt-28 lg:pt-10 mb-20"
         >
-          <div className=" flex flex-col-reverse lg:flex-row h-full lg:h-screen items-center justify-around gap-4 lg:gap-0  px-4 lg:px-8 ">
+          <div className=" flex flex-col-reverse lg:flex-row h-full lg:h-screen items-center justify-around gap-4 lg:gap-0  px-10 lg:px-8 ">
             <article className="max-w-[800px] lg:w-1/2 h- flex flex-col gap-8 justify-between">
               <h3 className=" font-bold mt-3 text-4xl lg:text-5xl font-waterfall text-teal-600 tracking-wide drop-shadow-teal dark:drop-shadow-teal rounded-xl max-w-fit transition duration-700 ease-in-out">
                 Raúl Jerez Pagán

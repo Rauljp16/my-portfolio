@@ -18,7 +18,7 @@ function About() {
           />
         </div>
         <div className="pb-8 lg:w-1/2 max-w-[800px]">
-          <h1 className="relative lg:-left-64 lg:mb-12 lg:w-[600px] text-4xl tracking-wide sm:text-6xl md:text-6xl lg:text-[88px] font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-4 drop-shadow-blackSvg">
+          <h1 className="relative lg:-left-64 lg:mb-12 lg:w-[600px] text-4xl tracking-wide sm:text-6xl md:text-6xl lg:text-6xl font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark py-4 drop-shadow-blackSvg">
             Sobre mí
           </h1>
           <p className="text-sm sm:text-md md:text-lg tracking-wide leading-7 font-inter drop-shadow-white dark:drop-shadow-black transition duration-75 ease-linear max-w-full lg:max-w-[500px] mb-10">

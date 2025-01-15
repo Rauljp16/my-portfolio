@@ -32,20 +32,7 @@ body {
 
 .slides {
   position: absolute;
-  top: 85%;
-  left: 60%;
-  transform: translateY(50%);
-  width: 23%;
-  height: 13%;
-  background-size: cover;
-  background-position: center 25%;
-  transition: 0.7s;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px #1e1e1e;
-}
-.slidesDesktop {
-  position: absolute;
-  top: 65%;
+  top: 48%;
   left: 68%;
   transform: translateY(50%);
   width: 16%;

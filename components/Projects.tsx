@@ -64,13 +64,41 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full h-screen overflow-hidden flex flex-col justify-start items-center pt-20 lg:pt-32 px-4"
+      className="relative w-full h-screen overflow-hidden flex flex-col justify-start items-center pt-20 lg:pt-32 px-10"
     >
-      <h1 className="relative mr-auto pb-6 text-3xl lg:text-6xl font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
-        Projects
-      </h1>
+      <div className="relative w-full flex items-end mb-5 ">
+        <h1 className="relative mr-auto text-3xl lg:text-6xl font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
+          Projects
+        </h1>
+        <article className="relative w-fit  flex gap-5 z-20 ">
+          <button
+            className="w-12 lg:h-9 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldLight rounded-xl transition duration-700 ease-in-out"
+            onClick={handlePrev}
+          >
+            <Image
+              src="svg/arrowLeft.svg"
+              alt="buttom"
+              className="h-9 w-9"
+              width={30}
+              height={30}
+            />
+          </button>
+          <button
+            className="w-12 lg:h-9 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldLight rounded-xl transition duration-700 ease-in-out"
+            onClick={handleNext}
+          >
+            <Image
+              src="svg/arrowRight.svg"
+              alt="buttom"
+              className="h-9 w-9"
+              width={30}
+              height={30}
+            />
+          </button>
+        </article>
+      </div>
 
-      <div className="relative slider w-full h-[70%] md:w-[55%] md:h-[80%] lg:w-[100%] lg:h-[75%] overflow-hidden">
+      <div className="relative slider w-[100%] h-[75%] overflow-hidden">
         <article className="relative childFocus slides bg-neutral-700 lg:bg-none p-3 md:p-18 lg:p-0">
           <Image
             src="/images/projects/taqueria.png"
@@ -79,7 +107,6 @@ function Projects() {
             width={1300}
             height={1300}
           />
-          <div className=""></div>
           <div
             id="focus"
             className="focusActive flex flex-col gap-4 lg:absolute lg:w-2/5 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
@@ -92,12 +119,12 @@ function Projects() {
               restaurante mexicano ficticio, con funcionalidades completas tanto
               para los clientes como para el equipo de administración.
             </p>
-            <ul className="flex gap-2 items-center w-fit bg-background-dark/80  flex-wrap p-1 rounded-xl">
+            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 lg:bg-transparent  flex-wrap p-1 rounded-xl">
               <li className="lg:bg-background-dark/60 rounded-xl p-1 backdrop-blur-sm transition duration-700 ease-in-out">
                 <Image
                   src="svg/carrusel/react.svg"
                   alt="icono projects"
-                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
+                  className=" w-6 lg:w-8 h-6 lg:h-8 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -106,7 +133,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/js.svg"
                   alt="icono projects"
-                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
+                  className=" w-6 lg:w-8 h-6 lg:h-8 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -115,7 +142,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/tailwind.svg"
                   alt="icono projects"
-                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
+                  className=" w-6 lg:w-8 h-6 lg:h-8 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
@@ -124,31 +151,31 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className=" w-6 lg:w-10 h-6 lg:h-10 drop-shadow-xl"
+                  className=" w-6 lg:w-8 h-6 lg:h-8 drop-shadow-xl"
                   width={30}
                   height={30}
                 />
               </li>
             </ul>
-            <div className="flex gap-4">
+            <div className="relative w-full flex gap-4 lg:p-1">
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-xs text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 transition duration-700 ease-in-out"
+                className="rounded-lg w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                WEB
+                <p className="flex items-center">WEB</p>
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="w-20 h-6 lg:w-24 lg:h-8 rounded-lg flex p-2 font-inter tracking-widest text-xs text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 justify-center items-center hover:scale-110 transition duration-700 ease-in-out"
+                className="rounded-lg w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                CÓDIGO
+                <p className="flex items-center">CÓDIGO</p>
               </Link>
             </div>
           </div>
         </article>
-        <article className="childFocus slides  bg-[url('/images/projects/mirandaEdit.png')] ">
+        <article className="childFocus slides bg-[url('/images/projects/mirandaEdit.png')] ">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 rounded-[20px]"></div>
           <div
             id="focus"
@@ -470,32 +497,6 @@ function Projects() {
           </div>
         </article>
       </div>
-      <article className="relative lg:absolute scale-75 top-[-1%] lg:bottom-[10%] left-[20%] lg:left-[6%] flex justify-normal gap-10 z-20 ">
-        <button
-          className="w-14 lg:h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
-          onClick={handlePrev}
-        >
-          <Image
-            src="svg/arrowLeft.svg"
-            alt="buttom"
-            className="h-9 w-9"
-            width={30}
-            height={30}
-          />
-        </button>
-        <button
-          className="w-14 lg:h-10 flex bg-background-dark/70 hover:drop-shadow-tealXs justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-xl transition duration-700 ease-in-out"
-          onClick={handleNext}
-        >
-          <Image
-            src="svg/arrowRight.svg"
-            alt="buttom"
-            className="h-9 w-9"
-            width={30}
-            height={30}
-          />
-        </button>
-      </article>
     </section>
   );
 }

@@ -6,7 +6,7 @@ function About() {
     <div>
       <section
         id="about"
-        className="relative flex flex-col lg:flex-row lg:h-svh items-center justify-center lg:gap-12 pt-20 lg:pt-32 p-10"
+        className="relative flex flex-col lg:flex-row lg:h-svh items-center justify-center lg:gap-12 pt-20 lg:pt-32 p-4"
       >
         <div className="relative aspect-square rounded-full overflow-hidden w-4/6 md:w-[400px] lg:w-1/2 lg:max-w-[500px] lg:bottom-16">
           <Image

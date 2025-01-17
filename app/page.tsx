@@ -145,7 +145,7 @@ export default function Home() {
         </section>
         <About />
         <Projects />
-        <section className="px-5">
+        <section className="relative px-5 h-40 md:h-auto lg:h-auto bottom-20 md:bottom-auto lg:bottom-auto">
           <Carrusel />
         </section>
         <Footer />

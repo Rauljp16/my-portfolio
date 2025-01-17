@@ -8,7 +8,7 @@ type SidebarProps = {
   setActiveMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-function Sidebar({ activeMenu, setActiveMenu }: SidebarProps) {
+function Sidebar({ setActiveMenu }: SidebarProps) {
   const [activeSection, setActiveSection] = useState<string>("home");
 
   const handleClick = () => {

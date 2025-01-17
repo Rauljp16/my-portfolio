@@ -82,6 +82,9 @@ body {
 .test {
   border: 2px solid red;
 }
+.test2 {
+  border: 2px solid rgb(0, 255, 255);
+}
 .height45 {
   height: 45%;
   transition: 0.7s;

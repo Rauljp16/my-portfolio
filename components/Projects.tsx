@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function Projects() {
-  const [screenSize, setScreenSize] = useState("");
+  const [screenSize, setScreenSize] = useState<string>("");
 
   useEffect(() => {
     const updateScreenSize = () => {
@@ -20,71 +20,81 @@ function Projects() {
     return () => window.removeEventListener("resize", updateScreenSize);
   }, []);
 
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+  const divFocusRef = useRef<HTMLDivElement | null>(null);
+
   const handleNext = () => {
-    const slider = document.querySelector(".slider") as HTMLElement;
-    const divFocus = document.getElementById("focus") as HTMLElement;
+    if (sliderRef.current && divFocusRef.current) {
+      console.log(divFocusRef.current);
+      const slider = sliderRef.current;
+      const divFocus = divFocusRef.current;
 
-    const slide1 = slider.children[0] as HTMLElement;
-    const slide2 = slider.children[1] as HTMLElement;
-    const slide3 = slider.children[2] as HTMLElement;
-    const slide4 = slider.children[3] as HTMLElement;
-    const slide5 = slider.children[4] as HTMLElement;
-    const slideFocus = slide3.children[1] as HTMLElement;
-    const slideImage1 = slide2.children[0] as HTMLElement;
-    const slideImage2 = slide5.children[0] as HTMLElement;
+      const slide1 = slider.children[0] as HTMLElement;
+      const slide2 = slider.children[1] as HTMLElement;
+      const slide3 = slider.children[2] as HTMLElement;
+      const slide4 = slider.children[3] as HTMLElement;
+      const slide5 = slider.children[4] as HTMLElement;
+      const slideFocus = slide3.children[1] as HTMLElement;
+      const slideImage1 = slide3.children[0] as HTMLElement;
+      const slideImage2 = slide1.children[0] as HTMLElement;
 
-    if (slider) {
+      // Mover las clases entre los slides
       slide1.classList.replace("childFocus", "child3");
       slide3.classList.replace("child1", "childFocus");
       slide4.classList.replace("child2", "child1");
       slide5.classList.replace("child3", "child2");
 
+      // Mover el primer slide al final
       slider.appendChild(slide1);
-    }
 
-    if (slide2.classList.contains("childFocus")) {
-      slideFocus.classList.replace("focusDesactive", "focusActive");
-      // slideImage1.classList.replace("height45", "height100");
-    }
+      // Verificar y cambiar el estado de enfoque de los elementos
+      if (slide2.classList.contains("childFocus")) {
+        slideFocus.classList.replace("focusDesactive", "focusActive");
+        slideImage1.classList.replace("height100", "height45");
+      }
 
-    if (!slide5.classList.contains("childFocus")) {
-      divFocus.classList.replace("focusActive", "focusDesactive");
-      // slideImage1.classList.replace("height100", "height45");
+      if (!slide5.classList.contains("childFocus")) {
+        divFocus.classList.replace("focusActive", "focusDesactive");
+        slideImage2.classList.replace("height45", "height100");
+      }
     }
   };
 
   const handlePrev = () => {
-    const slider = document.querySelector(".slider") as HTMLElement;
-    const divFocus = document.getElementById("focus") as HTMLElement;
+    if (sliderRef.current && divFocusRef.current) {
+      const slider = sliderRef.current;
+      const divFocus = divFocusRef.current;
+      console.log(slider);
 
-    const slide2 = slider.children[1] as HTMLElement;
-    const slide3 = slider.children[2] as HTMLElement;
-    const slide4 = slider.children[3] as HTMLElement;
-    const slide5 = slider.children[4] as HTMLElement;
-    const slideFocus = slide2.children[1] as HTMLElement;
-    const slideImage1 = slide2.children[0] as HTMLElement;
-    const slideImage2 = slide5.children[0] as HTMLElement;
+      const slide2 = slider.children[1] as HTMLElement;
+      const slide3 = slider.children[2] as HTMLElement;
+      const slide4 = slider.children[3] as HTMLElement;
+      const slide5 = slider.children[4] as HTMLElement;
+      const slideFocus = slide2.children[1] as HTMLElement;
+      const slideImage1 = slide2.children[0] as HTMLElement;
+      const slideImage2 = slide5.children[0] as HTMLElement;
 
-    if (slider) {
+      // Mover las clases entre los slides
       slide5.classList.replace("child3", "childFocus");
       slide2.classList.replace("childFocus", "child1");
       slide3.classList.replace("child1", "child2");
       slide4.classList.replace("child2", "child3");
 
+      // Mover el último slide al principio
       slider.insertBefore(slide5, slider.firstElementChild);
-    }
 
-    if (!slide2.classList.contains("childFocus")) {
-      slideFocus.classList.replace("focusActive", "focusDesactive");
-      slideImage2.classList.replace("height100", "height45");
-    }
+      // Verificar y cambiar el estado de enfoque de los elementos
+      if (!slide2.classList.contains("childFocus")) {
+        slideFocus.classList.replace("focusActive", "focusDesactive");
+        slideImage2.classList.replace("height100", "height45");
+      }
 
-    if (slide5.classList.contains("childFocus")) {
-      divFocus.classList.replace("focusDesactive", "focusActive");
-      slideImage1.classList.replace("height45", "height100");
+      if (slide5.classList.contains("childFocus")) {
+        divFocus.classList.replace("focusDesactive", "focusActive");
+        slideImage1.classList.replace("height45", "height100");
+      }
     }
   };
-
   return (
     <section
       id="projects"
@@ -122,9 +132,12 @@ function Projects() {
         </article>
       </div>
 
-      <div className="relative slider w-[100%] h-[65%] lg:h-[80%] md:h-[70%] overflow-hidden md:max-w-[90%] lg:max-w-[100%]">
+      <div
+        ref={sliderRef}
+        className="relative slider w-[100%] h-[65%] lg:h-[80%] md:h-[70%] overflow-hidden md:max-w-[90%] lg:max-w-[100%] "
+      >
         <article
-          className={`relative childFocus ${screenSize} bg-neutral-700 lg:bg-none p-3 md:p-18 lg:p-0`}
+          className={`relative childFocus ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/taqueria.png"
@@ -135,9 +148,10 @@ function Projects() {
           />
           <div
             id="focus"
-            className="focusActive flex flex-col gap-4 lg:absolute lg:w-2/5 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            ref={divFocusRef}
+            className="focusActive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
           >
-            <h1 className="font-train w-[90%] text-xk md:text-2xl lg:text-3xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
               TAQUERIA TAQUEANDO
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -202,7 +216,7 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative childFocus ${screenSize} bg-neutral-700 lg:bg-none p-3 md:p-18 lg:p-0`}
+          className={`relative childFocus ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/mirandaEdit.png"
@@ -213,10 +227,11 @@ function Projects() {
           />
 
           <div
-            id="focus"
-            className="focusActive flex flex-col gap-4 lg:absolute lg:w-2/5 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            // id="focus"
+            ref={divFocusRef}
+            className="focusActive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
           >
-            <h1 className="font-train w-[90%] text-xk md:text-2xl lg:text-3xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
               HOTEL MIRANDA
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -308,7 +323,7 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative child1 ${screenSize} bg-neutral-700 lg:bg-none p-3 md:p-18 lg:p-0`}
+          className={`relative child1 ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/dashboardEdit.png"
@@ -318,10 +333,11 @@ function Projects() {
             height={1300}
           />
           <div
-            id="focus"
-            className="focusDesactive flex flex-col gap-4 lg:absolute lg:w-2/5 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            // id="focus"
+            ref={divFocusRef}
+            className="focusDesactive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
           >
-            <h1 className="font-train w-[90%] text-xk md:text-2xl lg:text-3xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
               DASHBOARD MIRANDA
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -396,7 +412,7 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative child2 ${screenSize} bg-neutral-700 lg:bg-none p-3 md:p-18 lg:p-0`}
+          className={`relative child2 ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/oxygalleryEdit.png"
@@ -406,10 +422,11 @@ function Projects() {
             height={1300}
           />
           <div
-            id="focus"
-            className="focusDesactive flex flex-col gap-4 lg:absolute lg:w-2/5 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            // id="focus"
+            ref={divFocusRef}
+            className="focusDesactive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
           >
-            <h1 className="font-train w-[90%] text-xk md:text-2xl lg:text-3xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
               OXYGALLERY
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -476,7 +493,7 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative child3 ${screenSize} bg-neutral-700 lg:bg-none p-3 md:p-18 lg:p-0`}
+          className={`relative child3 ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/oxygenShopEdit.png"
@@ -486,10 +503,11 @@ function Projects() {
             height={1300}
           />
           <div
-            id="focus"
-            className="focusDesactive flex flex-col gap-4 lg:absolute lg:w-2/5 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            // id="focus"
+            ref={divFocusRef}
+            className="focusDesactive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
           >
-            <h1 className="font-train w-[90%] text-xk md:text-2xl lg:text-3xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
               OXYGEN SHOP
             </h1>
             <p className=" text-xs md:text-sm text-background-light">

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <section id="footer" className=" pl-2 pr-1">
-      <div className=" flex justify-between items-center p-4 pt-8 pb-0 mx-auto border-t border-goldDark ]">
+    <section id="footer" className=" px-4">
+      <div className=" flex justify-between items-center px-4 pt-8 pb-0 mx-auto border-t border-goldDark ]">
         <div className="relative -left-4 -top-1 ">
           <Image
             src="/images/logo.png"
@@ -65,7 +65,7 @@ function Footer() {
         </ul>
       </div>
 
-      <div className="flex items-end gap-2 pl-6 pb-4 pt-5 ">
+      <div className="flex items-end gap-2 pb-4 pt-5 ">
         <Image src="svg/bulb.svg" alt="icon tools" width={22} height={22} />
         <Image
           src="svg/palette.svg"

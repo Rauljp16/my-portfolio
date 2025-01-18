@@ -25,9 +25,7 @@ function Projects() {
 
   const handleNext = () => {
     if (sliderRef.current && divFocusRef.current) {
-      console.log(divFocusRef.current);
       const slider = sliderRef.current;
-      const divFocus = divFocusRef.current;
 
       const slide1 = slider.children[0] as HTMLElement;
       const slide2 = slider.children[1] as HTMLElement;
@@ -38,23 +36,20 @@ function Projects() {
       const slideImage1 = slide3.children[0] as HTMLElement;
       const slideImage2 = slide1.children[0] as HTMLElement;
 
-      // Mover las clases entre los slides
       slide1.classList.replace("childFocus", "child3");
       slide3.classList.replace("child1", "childFocus");
       slide4.classList.replace("child2", "child1");
       slide5.classList.replace("child3", "child2");
 
-      // Mover el primer slide al final
       slider.appendChild(slide1);
 
-      // Verificar y cambiar el estado de enfoque de los elementos
       if (slide2.classList.contains("childFocus")) {
         slideFocus.classList.replace("focusDesactive", "focusActive");
         slideImage1.classList.replace("height100", "height45");
       }
 
       if (!slide5.classList.contains("childFocus")) {
-        divFocus.classList.replace("focusActive", "focusDesactive");
+        slide5.children[1].classList.replace("focusActive", "focusDesactive");
         slideImage2.classList.replace("height45", "height100");
       }
     }
@@ -63,8 +58,6 @@ function Projects() {
   const handlePrev = () => {
     if (sliderRef.current && divFocusRef.current) {
       const slider = sliderRef.current;
-      const divFocus = divFocusRef.current;
-      console.log(slider);
 
       const slide2 = slider.children[1] as HTMLElement;
       const slide3 = slider.children[2] as HTMLElement;
@@ -74,23 +67,20 @@ function Projects() {
       const slideImage1 = slide2.children[0] as HTMLElement;
       const slideImage2 = slide5.children[0] as HTMLElement;
 
-      // Mover las clases entre los slides
       slide5.classList.replace("child3", "childFocus");
       slide2.classList.replace("childFocus", "child1");
       slide3.classList.replace("child1", "child2");
       slide4.classList.replace("child2", "child3");
 
-      // Mover el último slide al principio
       slider.insertBefore(slide5, slider.firstElementChild);
 
-      // Verificar y cambiar el estado de enfoque de los elementos
       if (!slide2.classList.contains("childFocus")) {
         slideFocus.classList.replace("focusActive", "focusDesactive");
         slideImage2.classList.replace("height100", "height45");
       }
 
       if (slide5.classList.contains("childFocus")) {
-        divFocus.classList.replace("focusDesactive", "focusActive");
+        slide5.children[1].classList.replace("focusDesactive", "focusActive");
         slideImage1.classList.replace("height45", "height100");
       }
     }

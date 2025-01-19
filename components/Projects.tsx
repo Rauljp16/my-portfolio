@@ -92,7 +92,7 @@ function Projects() {
     >
       <div className="relative w-full md:max-w-[90%] lg:max-w-[100%] flex items-end mb-5 ">
         <h1 className="relative mr-auto text-3xl md:text-5xl lg:text-6xl font-train text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
-          Projects
+          Proyectos
         </h1>
         <article className="relative w-fit flex gap-5 z-20 ">
           <button

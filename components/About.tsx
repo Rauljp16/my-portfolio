@@ -29,7 +29,7 @@ function About() {
             tecnologías y desafíos.
           </p>
           <h3 className="font-inter font-bold tracking-wider text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-goldDark via-goldLight to-goldDark">
-            Skills
+            Tecnologías
           </h3>
           <ul className="columns-3 font-inter font-bold text-sm sm:text-base tracking-wider text-teal-600 mt-4 space-y-1 ">
             <li>JavaScript</li>

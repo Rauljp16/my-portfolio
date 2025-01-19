@@ -74,7 +74,7 @@ function Footer() {
           height={22}
         />
         <p className="text-sm text-zinc-500 pl-2">
-          Porfolio realizado por RAÚL JEREZ PAGÁN. 2025
+          Portfolio realizado por RAÚL JEREZ PAGÁN. 2025
         </p>
       </div>
     </section>

@@ -207,9 +207,9 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-24 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                   <Image
                     src="svg/code.svg"
                     alt="icono projects"
@@ -332,9 +332,9 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Miranda-Laravel"
-                className="rounded-xl w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-24 h-8 flex justify-center text-[11px] font-semibold tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                   <Image
                     src="svg/code.svg"
                     alt="icono projects"
@@ -439,9 +439,9 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Dashboard-"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-24 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                   <Image
                     src="svg/code.svg"
                     alt="icono projects"
@@ -538,9 +538,9 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/oxygallery"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-24 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                   <Image
                     src="svg/code.svg"
                     alt="icono projects"
@@ -639,7 +639,7 @@ function Projects() {
                 href="https://github.com/Rauljp16/OxygenShop"
                 className="rounded-xl w-24 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 ">
                   <Image
                     src="svg/code.svg"
                     alt="icono projects"

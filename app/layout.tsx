@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
-// import { Inter } from 'next/font/google';
 import { Waterfall, Inter, Train_One } from "next/font/google";
 
 const inter = Inter({
@@ -20,7 +19,7 @@ const waterfall = Waterfall({
 });
 
 export const metadata: Metadata = {
-  title: "My portfolio",
+  title: "Rauljp",
   description: "My portfolio",
 };
 

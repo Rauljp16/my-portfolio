@@ -28,7 +28,6 @@ function Footer() {
                 height={36}
                 className="hover:drop-shadow-gold hover:scale-110"
               />
-              {/* <p>LinkedIn</p> */}
             </Link>
           </li>
           <li>
@@ -44,12 +43,11 @@ function Footer() {
                 height={36}
                 className="hover:drop-shadow-gold hover:scale-110"
               />
-              {/* <p>GitHub</p> */}
             </Link>
           </li>
           <li>
             <Link
-              href="mailto:raul_astra16@hotmail.com"
+              href="mailto:rauljp16@gmail.com"
               className="flex items-center gap-1 text-goldDark"
             >
               <Image
@@ -59,7 +57,6 @@ function Footer() {
                 height={37}
                 className="hover:drop-shadow-gold hover:scale-110"
               />
-              {/* <p>raul_astra16@hotmail.com</p> */}
             </Link>
           </li>
         </ul>

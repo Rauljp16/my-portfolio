@@ -120,7 +120,7 @@ export default function Home() {
                     </Link>
                   </li>
                   <li className="w-12 h-12 flex p-2 dark:hover:bg-teal-900 hover:bg-teal-900 bg-background-light dark:bg-background-dark justify-center items-center hover:scale-110 border-[1px] border-goldDark rounded-full transition duration-700 ease-in-out">
-                    <Link href="mailto:raul_astra16@hotmail.com">
+                    <Link href="mailto:rauljp16@gmail.com">
                       <Image
                         src="svg/contact.svg"
                         alt="icono contact"

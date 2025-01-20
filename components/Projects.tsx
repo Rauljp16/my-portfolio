@@ -124,7 +124,7 @@ function Projects() {
 
       <div
         ref={sliderRef}
-        className="relative slider w-[100%] h-[65%] lg:h-[80%] md:h-[70%] overflow-hidden md:max-w-[90%] lg:max-w-[100%] "
+        className="relative slider w-[100%] h-[62%] lg:h-[80%] md:h-[70%] overflow-hidden md:max-w-[90%] lg:max-w-[100%] "
       >
         <article
           className={`relative childFocus ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
@@ -139,9 +139,9 @@ function Projects() {
           <div
             id="focus"
             ref={divFocusRef}
-            className="focusActive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
+            className="focusActive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
-            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               TAQUERIA TAQUEANDO
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -149,7 +149,7 @@ function Projects() {
               restaurante mexicano ficticio, con funcionalidades completas tanto
               para los clientes como para el equipo de administración.
             </p>
-            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap p-2 rounded-xl">
+            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap px-2 py-1 rounded-xl">
               <li className="w-fit h-fit">
                 <Image
                   src="svg/carrusel/react.svg"
@@ -181,7 +181,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
+                  // className="w-5 h-5"
                   width={30}
                   height={30}
                 />
@@ -237,9 +237,9 @@ function Projects() {
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusActive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
+            className="focusActive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
-            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               HOTEL MIRANDA
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -247,7 +247,7 @@ function Projects() {
               ficticio, con funcionalidades completas tanto para los usuarios
               como para los administradores.
             </p>
-            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap p-2 rounded-xl">
+            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap py-1 px-2 rounded-xl">
               <li className="w-fit h-fit">
                 <Image
                   src="svg/carrusel/html.svg"
@@ -270,17 +270,17 @@ function Projects() {
                 <Image
                   src="svg/carrusel/sass.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
-                  width={30}
-                  height={30}
+                  // className="w-5 h-5"
+                  width={25}
+                  height={25}
                 />
               </li>
               <li className="w-fit h-fit">
                 <Image
                   src="svg/carrusel/php.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
-                  width={30}
+                  // className="w-5 h-5"
+                  width={33}
                   height={30}
                 />
               </li>
@@ -297,8 +297,8 @@ function Projects() {
                 <Image
                   src="svg/carrusel/mysql.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
-                  width={30}
+                  // className="w-5 h-5"
+                  width={32}
                   height={30}
                 />
               </li>
@@ -306,8 +306,8 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
-                  width={30}
+                  // className="w-5 h-5"
+                  width={32}
                   height={30}
                 />
               </li>
@@ -361,18 +361,18 @@ function Projects() {
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusDesactive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
+            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
-            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               DASHBOARD MIRANDA
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
-              Dashboard Miranda, una aplicación diseñad apara la gestión interna
+              Dashboard Miranda, una aplicación diseñada para la gestión interna
               del Hotel Miranda. Facilita el control de reservas, administración
               de habitaciones, monitoreo de la ocupación, y gestión de
               servicios, optimizando la operatividad diaria del hotel.
             </p>
-            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap p-2 rounded-xl">
+            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap px-2 py-1 rounded-xl">
               <li className="w-fit h-fit">
                 <Image
                   src="svg/carrusel/react.svg"
@@ -386,8 +386,8 @@ function Projects() {
                 <Image
                   src="svg/carrusel/ts.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
-                  width={30}
+                  // className="w-5 h-5"
+                  width={29}
                   height={30}
                 />
               </li>
@@ -395,8 +395,8 @@ function Projects() {
                 <Image
                   src="svg/carrusel/styled.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
-                  width={30}
+                  // className="w-5 h-5"
+                  width={31}
                   height={30}
                 />
               </li>
@@ -404,7 +404,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/mysql.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
+                  // className="w-5 h-5"
                   width={30}
                   height={30}
                 />
@@ -413,7 +413,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
+                  // className="w-5 h-5"
                   width={30}
                   height={30}
                 />
@@ -468,9 +468,9 @@ function Projects() {
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusDesactive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
+            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
-            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               OXYGALLERY
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -480,7 +480,7 @@ function Projects() {
               a imágenes categorizadas y personalizables, optimizando la
               experiencia de búsqueda visual.
             </p>
-            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap p-2 rounded-xl">
+            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap px-2 py-1 rounded-xl">
               <li className="w-fit h-fit">
                 <Image
                   src="svg/carrusel/react.svg"
@@ -512,7 +512,7 @@ function Projects() {
                 <Image
                   src="svg/carrusel/aws.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
+                  // className="w-5 h-5"
                   width={30}
                   height={30}
                 />
@@ -567,9 +567,9 @@ function Projects() {
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusDesactive flex flex-col gap-4 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-5"
+            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
-            <h1 className="font-train w-[90%] text-xl md:text-3xl lg:text-4xl  font-bold text-background-light">
+            <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               OXYGEN SHOP
             </h1>
             <p className=" text-xs md:text-sm text-background-light">
@@ -579,7 +579,7 @@ function Projects() {
               variedad de productos y disfrutar de una experiencia de compra
               fluida y segura
             </p>
-            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap p-2 rounded-xl">
+            <ul className="flex gap-2 items-center w-fit bg-background-dark/80 flex-wrap px-2 py-1 rounded-xl">
               <li className="w-fit h-fit">
                 <Image
                   src="svg/carrusel/html.svg"
@@ -593,8 +593,8 @@ function Projects() {
                 <Image
                   src="svg/carrusel/sass.svg"
                   alt="icono projects"
-                  className="w-5 h-5"
-                  width={30}
+                  // className="w-5 h-5"
+                  width={25}
                   height={30}
                 />
               </li>
@@ -654,19 +654,7 @@ function Projects() {
           </div>
         </article>
       </div>
-      <article className="absolute bottom-[16%] md:bottom-[13%] lg:bottom-[7%] mx-auto w-full">
-        <div className="flex justify-center items-center gap-4 p-3">
-          <button
-            onClick={handlePrev}
-            className="w-2 h-2 rounded-full bg-white"
-          ></button>
-          <div className="w-3 h-3 rounded-full border border-neutral-800 bg-goldDark"></div>
-          <button
-            onClick={handleNext}
-            className="w-2 h-2 rounded-full bg-white"
-          ></button>
-        </div>
-      </article>
+      <article className="absolute bottom-[16%] md:bottom-[13%] lg:bottom-[7%] mx-auto w-full"></article>
     </section>
   );
 }

@@ -191,16 +191,34 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="rounded-xl w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">WEB</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/web.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">WEB</p>
+                </div>
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Restaurante-mexicano"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">CÓDIGO</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/code.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">CÓDIGO</p>
+                </div>
               </Link>
             </div>
           </div>
@@ -298,16 +316,34 @@ function Projects() {
               <Link
                 target="_blank"
                 href="http://13.39.47.117/"
-                className="rounded-xl w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">WEB</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/web.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">WEB</p>
+                </div>
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Miranda-Laravel"
-                className="rounded-xl w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center text-[11px] font-semibold tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">CÓDIGO</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/code.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">CÓDIGO</p>
+                </div>
               </Link>
             </div>
           </div>
@@ -387,16 +423,34 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://d17y33nb4a9wqn.cloudfront.net/"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">WEB</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/web.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">WEB</p>
+                </div>
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/Dashboard-"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">CÓDIGO</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/code.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">CÓDIGO</p>
+                </div>
               </Link>
             </div>
           </div>
@@ -468,16 +522,34 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://d2y2vhecn82g01.cloudfront.net/"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">WEB</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/web.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">WEB</p>
+                </div>
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/oxygallery"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">CÓDIGO</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/code.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">CÓDIGO</p>
+                </div>
               </Link>
             </div>
           </div>
@@ -549,21 +621,52 @@ function Projects() {
               <Link
                 target="_blank"
                 href="https://rauljp16.github.io/OxygenShop/"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">WEB</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/web.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">WEB</p>
+                </div>
               </Link>
               <Link
                 target="_blank"
                 href="https://github.com/Rauljp16/OxygenShop"
-                className="rounded-xl w-20 h-8 flex justify-center font-semibold text-[11px] tracking-widest text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
+                className="rounded-xl w-24 h-8 flex justify-center font-semibold text-[11px] tracking-widest border border-goldDark text-teal-600 hover:drop-shadow-tealXs hover:text-background-light bg-background-dark/80 hover:scale-110 transition duration-700 ease-in-out py-1"
               >
-                <p className="flex items-center">CÓDIGO</p>
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="svg/code.svg"
+                    alt="icono projects"
+                    className="w-5 h-5"
+                    width={30}
+                    height={30}
+                  />
+                  <p className="flex items-center">CÓDIGO</p>
+                </div>
               </Link>
             </div>
           </div>
         </article>
       </div>
+      <article className="absolute bottom-[16%] md:bottom-[13%] lg:bottom-[7%] mx-auto w-full">
+        <div className="flex justify-center items-center gap-4 p-3">
+          <button
+            onClick={handlePrev}
+            className="w-2 h-2 rounded-full bg-white"
+          ></button>
+          <div className="w-3 h-3 rounded-full border border-neutral-800 bg-goldDark"></div>
+          <button
+            onClick={handleNext}
+            className="w-2 h-2 rounded-full bg-white"
+          ></button>
+        </div>
+      </article>
     </section>
   );
 }

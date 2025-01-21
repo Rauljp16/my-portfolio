@@ -49,7 +49,7 @@ function Projects() {
       }
 
       if (!slide5.classList.contains("childFocus")) {
-        slide5.children[1].classList.replace("focusActive", "focusDesactive");
+        slide1.children[1].classList.replace("focusActive", "focusDesactive");
         slideImage2.classList.replace("height45", "height100");
       }
     }
@@ -127,19 +127,19 @@ function Projects() {
         className="relative slider w-[100%] h-[62%] lg:h-[80%] md:h-[70%] overflow-hidden md:max-w-[90%] lg:max-w-[100%] "
       >
         <article
-          className={`relative childFocus ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
+          className={`relative short:flex short:flex-row-reverse childFocus ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/taqueria.png"
             alt="project taqueria"
-            className="w-full height45 lg:h-full object-cover md:object-center rounded-[20px]"
+            className="w-full short:h-full height45 lg:h-full object-cover md:object-center rounded-[20px]"
             width={1300}
             height={1300}
           />
           <div
             id="focus"
             ref={divFocusRef}
-            className="focusActive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            className="focusActive flex flex-col gap-3 md:gap-6 lg:gap-8 short:relative short:scale-75 short:-top-9 short:gap-3 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
             <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               TAQUERIA TAQUEANDO
@@ -224,12 +224,12 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative childFocus ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
+          className={`relative short:flex short:flex-row-reverse childFocus ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/mirandaEdit.png"
             alt="project hotel miranda"
-            className="w-full height45 lg:h-full object-cover md:object-center rounded-[20px]"
+            className="w-full short:h-full height45 lg:h-full object-cover md:object-center rounded-[20px]"
             width={1300}
             height={1300}
           />
@@ -237,7 +237,7 @@ function Projects() {
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusActive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            className="focusActive flex flex-col gap-3 md:gap-6 lg:gap-8 short:relative short:scale-75 short:-top-9 short:gap-3 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
             <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               HOTEL MIRANDA
@@ -349,19 +349,19 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative child1 ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
+          className={`relative child1 short:flex short:flex-row-reverse ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/dashboardEdit.png"
             alt="project dashboard miranda"
-            className="w-full height100 lg:h-full object-cover md:object-center rounded-[20px]"
+            className="w-full height100 short:h-full lg:h-full object-cover md:object-center rounded-[20px]"
             width={1300}
             height={1300}
           />
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 short:relative short:scale-75 short:-top-10 short:gap-2 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
             <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               DASHBOARD MIRANDA
@@ -456,19 +456,19 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative child2 ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
+          className={`relative child2 short:flex short:flex-row-reverse ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/oxygalleryEdit.png"
             alt="project oxygallery"
-            className="w-full height100 lg:h-full object-cover md:object-center rounded-[20px]"
+            className="w-full short:h-full height100 lg:h-full object-cover md:object-center rounded-[20px]"
             width={1300}
             height={1300}
           />
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 short:relative short:scale-75 short:-top-9 short:gap-3 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
             <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               OXYGALLERY
@@ -555,19 +555,19 @@ function Projects() {
           </div>
         </article>
         <article
-          className={`relative child3 ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
+          className={`relative child3 short:flex short:flex-row-reverse ${screenSize} bg-neutral-700 lg:bg-none p-4 lg:p-0`}
         >
           <Image
             src="/images/projects/oxygenShopEdit.png"
             alt="project oxygen shop"
-            className="w-full height100 lg:h-full object-cover md:object-center rounded-[20px]"
+            className="w-full short:h-full height100 lg:h-full object-cover md:object-center rounded-[20px]"
             width={1300}
             height={1300}
           />
           <div
             // id="focus"
             ref={divFocusRef}
-            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
+            className="focusDesactive flex flex-col gap-3 md:gap-6 lg:gap-8 short:relative short:scale-75 short:-top-9 short:gap-3 lg:absolute lg:w-80 lg:h-1/2 lg:top-[5%] lg:left-[2%] pt-4"
           >
             <h1 className="font-train w-[90%] text-lg md:text-3xl lg:text-4xl  font-bold text-background-light">
               OXYGEN SHOP

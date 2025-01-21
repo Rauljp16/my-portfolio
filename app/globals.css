@@ -29,7 +29,9 @@ body {
   left: auto; */
   border-radius: 20px;
 }
-
+.slidesMini {
+  opacity: 0;
+}
 .slides {
   position: absolute;
   top: 53%;
@@ -78,12 +80,6 @@ body {
   height: 100%;
   /* box-shadow: 0 0 0 #1e1e1e; */
   background-size: cover;
-}
-.test {
-  border: 2px solid red;
-}
-.test2 {
-  border: 2px solid rgb(0, 255, 255);
 }
 .height45 {
   height: 45%;

@@ -51,6 +51,10 @@ const config: Config = {
           "100%": { transform: "translateX(-100%)" },
         },
       },
+      screens: {
+        mini: { raw: '(max-width: 360px) and (max-height: 600px)' },
+        short: { raw: '(max-height: 700px)' },
+      },
     },
   },
   plugins: [],
